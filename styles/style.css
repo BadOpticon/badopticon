@@ -7,7 +7,7 @@ body {
     background-color: rgb(25, 25, 25);
     color: white;
     font-family: "Libre Franklin";
-    font-weight: 500;
+    font-weight: 600;
     padding: 0 100px;
 }
 
@@ -32,7 +32,7 @@ h5 {
 }
 
 ol {
-  justify-content: left;
+  justify-self: left;
 }
 
 a {
@@ -63,15 +63,28 @@ a:hover {
 /* posts */
 .post {
   background-color: var(--red);
-  padding: 20px 10px 20px 10px;
+  padding: 20px 5px;
   border: 2px inset var(--yellow);
+  justify-content: center;
+}
+
+.postItemTwo {
+  max-width: 600px;
+  width: 100%;
+  padding: 0;
+  background-color: rgb(235, 235, 235);
+  margin-right: 10px;
+  color: rgb(25, 25, 25);
+}
+
+.post p, h1, h2, h3, h4, h5 {
+  padding: 10px;
 }
 
 .post h2 {
   text-shadow: 1px 4px 1px var(--red)
 }
 
-.post-text {
-  background-color: var(--yellow);
-  color: black;
+.post img {
+  width: 100%;
 }
