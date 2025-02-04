@@ -1,0 +1,114 @@
+:root {
+    --red: #a30a02;
+    --yellow: #edde05;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Libre Franklin";
+    font-weight: 500;
+    padding: 0 100px;
+}
+
+h1 {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+    text-shadow: 1px 4px 1px var(--red);
+}    
+
+a {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* header & navbar */
+
+.header h1 {
+  max-width:1000px;
+  width:100%;
+  font-size: 5rem;
+  text-shadow: 1px 4px 1px var(--red);
+}
+
+#navbar {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0px auto 20px auto;
+    font-size: 1.2rem;
+    text-align: center;
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: var(--red);
+    border: 2px solid var(--yellow);
+  }
+
+#navbar a {
+  background-image: linear-gradient(
+    to right,
+    white,
+    white 50%,
+    var(--yellow) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar a:before{
+  content: '';
+  background: white;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+ background-position: 0;
+}
+
+#navbar a:hover::before{
+  width: 100%;
+}
+
+/* image map */
+.index {
+    justify-content: center;
+}
+
+.index img {
+    max-width: 1000px;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.indexlink {
+    padding: 0;
+}
