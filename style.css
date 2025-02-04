@@ -49,6 +49,14 @@ a:hover {
   text-shadow: 1px 4px 1px var(--red);
 }
 
+#header a {
+  color: white;
+}
+
+#header a:hover {
+  text-decoration: none;
+}
+
 #navbar {
     max-width: 1000px;
     width: 100%;
