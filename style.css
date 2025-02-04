@@ -42,7 +42,7 @@ a:hover {
 
 /* header & navbar */
 
-.header h1 {
+#header h1 {
   max-width:1000px;
   width:100%;
   font-size: 5rem;
