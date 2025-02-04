@@ -1,0 +1,14 @@
+h1 {
+  max-width:1000px;
+  width:100%;
+  font-size: 5rem;
+  text-shadow: 1px 4px 1px var(--red);
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+}
