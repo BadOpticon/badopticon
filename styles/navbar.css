@@ -1,12 +1,12 @@
-.navbar {
+.nav {
     max-width: 1000px;
     width: 100%;
-    margin: 10px auto !important;
+    margin: 10px auto 0 auto !important;
     background-color: var(--red);
-    border: 2px solid var(--yellow);
+    border: 2px inset var(--yellow);
   }
 
-  .navbar-item {
+.nav-item {
     margin: auto;
     font-size: 1.2rem;
     text-align:center;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
   }  
 
-.navbar a {
+.nav-item a {
   background-image: linear-gradient(
     to right,
     white,
@@ -31,7 +31,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.navbar a:before{
+.nav-item a:before{
   content: '';
   background: white;
   display: block;
@@ -43,10 +43,10 @@
   transition: all 0.3s ease-in-out;
 }
 
-.navbar a:hover {
+.nav-item a:hover {
  background-position: 0;
 }
 
-.navbar a:hover::before{
+.nav-item a:hover::before{
   width: 100%;
 }
