@@ -1,4 +1,4 @@
-h1 {
+.header h1 {
   max-width:1000px;
   width:100%;
   padding: 0 0 0 5px;
@@ -6,10 +6,10 @@ h1 {
   text-shadow: 1px 4px 1px var(--red);
 }
 
-a {
+.header a {
   color: white;
 }
 
-a:hover {
+.header a:hover {
   text-decoration: none;
 }

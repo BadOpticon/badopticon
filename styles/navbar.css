@@ -10,7 +10,7 @@
     border: 2px solid var(--yellow);
   }
 
-a {
+.navbar a {
   background-image: linear-gradient(
     to right,
     white,
@@ -27,7 +27,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:before{
+.navbar a:before{
   content: '';
   background: white;
   display: block;
@@ -39,10 +39,10 @@ a:before{
   transition: all 0.3s ease-in-out;
 }
 
-a:hover {
+.navbar a:hover {
  background-position: 0;
 }
 
-a:hover::before{
+.navbar a:hover::before{
   width: 100%;
 }
