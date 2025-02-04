@@ -1,7 +1,7 @@
 .nav {
     max-width: 1000px;
     width: 100%;
-    margin: 10px auto 0 auto !important;
+    margin: 10px auto !important;
     background-color: var(--red);
     border: 2px inset var(--yellow);
   }
@@ -14,7 +14,7 @@
     text-transform: uppercase;
   }  
 
-.nav-item a {
+/* .nav-item a {
   background-image: linear-gradient(
     to right,
     white,
@@ -49,4 +49,4 @@
 
 .nav-item a:hover::before{
   width: 100%;
-}
+} */
