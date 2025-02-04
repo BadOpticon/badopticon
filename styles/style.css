@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(25, 25, 25);
+    background-color: black;
     color: white;
     font-family: "Libre Franklin";
     font-weight: 600;
@@ -62,7 +62,6 @@ a:hover {
 
 /* posts */
 .post {
-  background-color: var(--red);
   padding: 20px 5px;
   border: 2px inset var(--yellow);
   justify-content: center;
@@ -72,9 +71,7 @@ a:hover {
   max-width: 600px;
   width: 100%;
   padding: 0;
-  background-color: rgb(235, 235, 235);
   margin-right: 10px;
-  color: rgb(25, 25, 25);
 }
 
 .post p, h1, h2, h3, h4, h5 {
