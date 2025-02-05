@@ -16,58 +16,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
-
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(function() {
-            $('#header').load('header.html');
-            $('#navbar').load('navbar.html');
-            $('#footer').load('footer.html');
-        });
-    </script>
 </head>
 
 <body>
-    <div id="header"></div>
+ <header>
+    <div class="header">
+        <div class="headItem">
+            <h1><a href="index.html">Bad Optics</a></h1>
+        </div>
+        <div class="headItem">
+          <h2>post-structuralist solutions for a Bounded World</h2>
+        </div>
+    </div>
 
-    <div id="navbar"></div>
+    <div class="row nav">
+        <div class="col nav-item">
+            <p><a href="music.html">Music</a></p>
+        </div>
+        <div class="col nav-item">
+            <p><a href="shows.html">Shows</a></p>
+        </div>
+        <div class="col nav-item">
+            <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div class="col nav-item">
+            <p><a href="epk.html">Press</a></p>
+        </div>
+    </div>
+ </header>
 
-    <main>
-        <div class="row post">
-                <div class="col-sm postItemTwo">
-                    <img src="images/eyeless.png">
-                </div>
+ <main>
+    <div class="row post">
+        <div class="col-sm postItemTwo">
+            <img src="images/eyeless.png">
+        </div>
 
-            <div class="col-sm postItemTwo">
-                <h2>The Bounded World</h2>
-                <p>A new record from the worst people you know.<br>
-                    Out on May 15th, 2025.</p>
+        <div class="col-sm postItemTwo">
+           <h2>The Bounded World</h2>
 
-                <h5>Track List:</h5>
-                <ol>
-                    <li>Upside Down in the Attic</li>
-                    <li>Falling from High Places</li>
-                    <li>Swan</li>
-                    <li>Heaven in Disguise</li>
-                    <li>Rats Rats Rats Rats Rats Rats</li>
-                    <li>Motives</li>
-                    <li>Behold! the Disappointment Machine</li>
-                    <li>Art Is for Everyone</li>
-                    <li>The Bounded World</li>
-                    <li>Everything Is Getting Worse</li>
-                    <li>Tomorrow I Will Be Perfect</li>
-                    <li>Spectral Streams Quenched Sad Upon the Point of Flames</li>
-                </ol>
-             </div>
+            <p>A new record from the worst people you know.<br>
+                Out on May 15th, 2025.</p>
+
+            <h5>Track List:</h5>
+            <ol>
+                <li>Upside Down in the Attic</li>
+                <li>Falling from High Places</li>
+                <li>Swan</li>
+                <li>Heaven in Disguise</li>
+                <li>Rats Rats Rats Rats Rats Rats</li>
+                <li>Motives</li>
+                <li>Behold! the Disappointment Machine</li>
+                <li>Art Is for Everyone</li>
+                <li>The Bounded World</li>
+                <li>Everything Is Getting Worse</li>
+                <li>Tomorrow I Will Be Perfect</li>
+                <li>Spectral Streams Quenched Sad Upon the Point of Flames</li>
+            </ol>
          </div>
+     </div>
 
-    </main>
+ </main>
 
     <div id="footer"></div>
-
-    <!-- bootstrap styling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>

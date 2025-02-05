@@ -31,10 +31,6 @@ h5 {
   margin: 5px auto;
 }
 
-ol {
-  justify-self: left;
-}
-
 a {
     color: var(--yellow);
     text-decoration: none;
@@ -45,7 +41,108 @@ a:hover {
     text-decoration: underline;
 }
 
-/* image map */
+/* header */
+.header {
+  max-width:1000px;
+  width:100%;
+  margin: auto;
+  text-shadow: 1px 4px 1px var(--red);
+}
+
+.header h1 {
+  padding-right: 5px;
+  font-size: 5rem;
+}
+
+.header h2 {
+  margin-left: -10px;
+  font-size: 0.7rem;
+}
+
+.headItem {
+  display: inline-block;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .header h1, h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+  .header h1 {
+  font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 0rem;
+  }
+}
+
+.header a {
+  color: white;
+}
+
+.header a:hover {
+  text-decoration: none;
+}
+
+/* navbar */
+.nav {
+  max-width: 1000px;
+  width: 100%;
+  margin: -10px auto 10px auto !important;
+  background-color: var(--red);
+  border: 2px inset var(--yellow);
+}
+
+.nav-item {
+  margin: auto;
+  font-size: 1.2rem;
+  text-align:center;
+  font-style: italic;
+  text-transform: uppercase;
+}  
+
+.nav-item a {
+background-image: linear-gradient(
+  to right,
+  white,
+  white 50%,
+  var(--yellow) 50%
+);
+background-size: 200% 100%;
+background-position: -100%;
+display: inline-block;
+padding: 5px 0;
+position: relative;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:before{
+content: '';
+background: white;
+display: block;
+position: absolute;
+bottom: 5px;
+left: 0;
+width: 0;
+height: 3px;
+transition: all 0.3s ease-in-out;
+}
+
+.nav-item a:hover {
+background-position: 0;
+}
+
+.nav-item a:hover::before{
+width: 100%;
+}
+
+/* index */
 .index {
     justify-content: center;
 }
@@ -63,7 +160,7 @@ a:hover {
 /* posts */
 .post {
   padding: 20px 5px;
-  border: 2px inset var(--yellow);
+  border: 2px inset white;
   justify-content: center;
 }
 
@@ -84,4 +181,8 @@ a:hover {
 
 .post img {
   width: 100%;
+}
+
+.post ol {
+  margin-left: 20px;
 }

@@ -16,21 +16,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="styles/style.css" rel="stylesheet" />
-
-    <!-- scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-      $(function() {
-        $('#header').load('header.html');
-        $('#navbar').load('navbar.html');
-        $('#footer').load('footer.html');
-      });
-    </script>
 </head>
 
 <body>
-    <div id="header"></div>
+    
+ <header>
+    <div class="header">
+        <div class="headItem">
+            <h1><a href="index.html">Bad Optics</a></h1>
+        </div>
+        <div class="headItem">
+          <h2>post-structuralist solutions for a Bounded World</h2>
+        </div>
+    </div>
+ </header>
 
+ <main>
     <div class="row index">
         <div class="col-3 indexlink">
             <a href="music.html"><img src="images/music.png" onmouseover="this.src='images/music2.png';" onmouseout="this.src='images/music.png';"></a>
@@ -48,6 +49,9 @@
             <a href="epk.html"><img src="images/epk.png" onmouseover="this.src='images/epk2.png';" onmouseout="this.src='images/epk.png';"></a>
         </div>
     </div>
+ </main>
+
+    <div id="footer"></div>
 
     <!-- bootstrap styling -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

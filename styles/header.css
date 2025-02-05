@@ -1,9 +1,39 @@
-.header h1 {
+.header {
   max-width:1000px;
   width:100%;
-  padding-right: 10px;
-  font-size: 5rem;
+  margin: auto;
   text-shadow: 1px 4px 1px var(--red);
+}
+
+.header h1 {
+  padding-right: 5px;
+  font-size: 5rem;
+}
+
+.header h2 {
+  margin-left: -10px;
+  font-size: 0.7rem;
+}
+
+.headItem {
+  display: inline-block;
+  margin: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .header h1, h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+
+  .header h1 {
+  font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 0rem;
+  }
 }
 
 .header a {
