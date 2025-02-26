@@ -1,14 +1,18 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 :root {
     --red: rgba(163, 10, 2, 1);
     --yellow: rgba(237, 222, 5, 1);
+    --pink: rgba(199, 174, 173, 1);
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-image: url("../images/big-pink.png");
+    background-repeat: repeat;
+    background-color: var(--pink);
+    color: black;
     font-family: "Libre Franklin";
     font-weight: 600;
-    padding: 0 100px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -16,167 +20,268 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 }
 
+h1, h2, h3, h4 {
+  color: white;
+}
+
 h1 {
-    font-size: 5em;
+    font-size: 50px;
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 32px;
+}
+
+h3 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 16px;
 }
 
 p {
-  font-size: 1.2eem;
+  font-size: 12px;
 }
 
 a {
-    color: var(--yellow);
+    color: var(--red);
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
+    color: var(--yellow);
     text-decoration: underline;
 }
 
 /* header */
 .header {
-  margin: auto;
+  padding: 0 10px;
+  background-color: black;
+  overflow: hidden;
+}
+
+.header h1 {
   text-shadow: 1px 4px 1px var(--red);
+  margin-bottom: 0;
 }
 
-h1.header {
-  padding-right: 5px;
-}
-
-h2.header {
-  margin-left: -10px;
+.header h4 {
   font-size: 0.7em;
+  text-shadow: 1px 3px 1px var(--red);
+  margin-left: 1px;
 }
 
-.headItem {
-  display: inline-block;
-  margin: 0;
-}
-
-@media screen and (max-width: 992px) {
-  h1, h2.header {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  }
-
-  h1.header {
-  font-size: 2rem;
-  }
-
-  h2.header {
-    font-size: 0rem;
-  }
-}
-
-a.header {
+.header a {
   color: white;
-}
-
-a:hover.header {
   text-decoration: none;
 }
 
-/* navbar */
-.nav {
-  max-width: 1000px;
-  width: 100%;
-  margin: -10px auto 10px auto !important;
-  background-color: var(--red);
-  border: 2px inset var(--yellow);
+.header p {
+  font-size: 16px;
 }
 
+.htItem {
+  display: flex;
+  align-items: flex-end;
+}
+
+.headNav {
+  align-items: flex-end;
+}
+
+.headNav ol {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.headNav li {
+  padding: 0 20px;
+}
+
+/* navbar */
+
 .nav-item {
-  margin: auto;
-  font-size: 1.2rem;
-  text-align:center;
+  display: inline-block;
+  margin: 30px 2px 0 2px;
   font-style: italic;
   text-transform: uppercase;
 }  
 
-a.nav-item {
+.nav-item a {
 background-image: linear-gradient(
   to right,
-  white,
-  white 50%,
-  var(--yellow) 50%
+  var(--yellow),
+  var(--yellow) 50%,
+  var(--red) 50%
 );
 background-size: 200% 100%;
 background-position: -100%;
 display: inline-block;
-padding: 5px 0;
+padding: 0;
 position: relative;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 transition: all 0.3s ease-in-out;
 }
 
-a:before.nav-item{
+.nav-item a:before {
 content: '';
-background: white;
+background: var(--yellow);
 display: block;
 position: absolute;
-bottom: 5px;
+bottom: 1px;
 left: 0;
 width: 0;
-height: 3px;
+height: 2px;
 transition: all 0.3s ease-in-out;
 }
 
-a:hover.nav-item {
+.nav-item a:hover {
 background-position: 0;
 }
 
-a:hover::before.nav-item{
+.nav-item a:hover::before {
 width: 100%;
 }
 
 /* index */
 .index {
     justify-content: center;
+    margin: auto;
 }
 
-img.index {
+.indexlink {
+  padding: 0;
+}
+
+.indexlink img {
     max-width: 1000px;
     width: 100%;
     border: 5px solid black;
 }
 
-.indexlink {
-    padding: 0;
+/* main */
+.main {
+  padding-bottom: 20px;
 }
 
 /* posts */
 .post {
-  padding: 50px 5px;
-  border: 2px inset white;
-  justify-content: center;
+  margin: 0;
+  padding: 15px 15px 0px 15px;
+  border: 4px solid black;
+  background: var(--pink);
+}
+
+.post h1,
+.post h2,
+.post h3 {
+  padding-bottom: 10px;
+  color: white;
+  text-shadow: 1px 3px 1px var(--red);
+}
+
+.post h5 {
+  text-decoration: underline;
+  margin-bottom: 0;
+}
+
+.post img {
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.postItemOne a {
+  color: black;
+}
+
+.postItemOne a:hover {
+  color: white;
+  text-decoration: none;
 }
 
 .postItemTwo {
-  padding: 0;
-  margin-right: 10px;
+  text-align: center;
 }
 
-p, h1, h2, h3, h4, h5.post {
-  padding: 10px;
+/* music */
+.musicNav {
+  margin: 30px auto;
 }
 
-h2.post {
-  text-shadow: 1px 4px 1px var(--red)
+.musicNav h2,
+.musicNav h3,
+.musicNav h4,
+.musicNav h5 {
+  text-shadow: 1px 3px 1px var(--red);
 }
 
-img.post {
+.musicNav img {
+ max-width: 150px;
+ width: 100%;
+ margin: auto;
+}
+
+.musicNavCont {
+  position: relative;
+  display:inline-block;
+}
+
+.musicNavImage {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
-ol.post {
-  margin-left: 20px;
+.musicNavOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #323232;
+}
+
+.musicNavCont:hover .musicNavOverlay {
+  opacity: .9;
+}
+
+.musicNavText {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.musicHead {
+  margin: 30px 0 0 0;
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  background-color: black;
+}
+
+.musicHead h1,
+.musicHead h2,
+.musicHead h3 {
+  padding: auto;
+  color: var(--red);
+  text-shadow: 0px 2px 20px black;
 }
 
 /* shows */
@@ -189,10 +294,62 @@ ol.post {
 }
 
 /* footer */
-.footer {
-   margin: 50px auto;
+footer {
+  background-color: black;
+  color: white;
+  margin: 10px auto 0 auto;
+  padding: 5px;
+  text-align: center;
 }
 
-p.footer {
+.footNav {
+  justify-content: center;
+  margin: 10px;
+}
+
+/* mobile */
+@media screen and (max-width: 992px) {
+  .header h1,
+  .header h2 {
+  margin: 0;
+  padding: 0;
   text-align: center;
+  }
+
+  .header h1 {
+  font-size: 2rem;
+  }
+
+  .header h2 {
+    font-size: 0rem;
+  }
+
+  .header a {
+  color: white;
+  }
+
+  .header a:hover {
+  text-decoration: none;
+  }
+
+  .musicNav {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 28%;
+    display: none;
+  }
+
+  .post h2 {
+    text-align: center;
+  }
+
+  .postItemOne {
+    order: 2;
+  }
+
+  .postItemTwo {
+    order: 1;
+  }
 }
