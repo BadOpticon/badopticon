@@ -365,6 +365,10 @@ footer {
     display: none;
   }
 
+  .headNav a:active {
+    color: var(--yellow);
+  }
+
   .headNav.responsive {
     position: relative;
   }
@@ -375,7 +379,8 @@ footer {
     bottom: 0;
   }
 
-  .headNav.responsive ul, a {
+  .headNav.responsive ul,
+  .headNav.responsive a {
     float: none;
     display: block;
     text-align: center;
