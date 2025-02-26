@@ -356,6 +356,10 @@ footer {
     display: none;
   }
 
+  .headNav {
+    justify-content: center;
+  }
+
   .headNav ul {
     display: none;
   }
@@ -380,10 +384,6 @@ footer {
     visibility: hidden;
     clear: both;
     display: none;
-  }
-
-  .post h2 {
-    text-align: center;
   }
 
   .postItemOne {
