@@ -40,39 +40,41 @@
         </div>
     </div> -->
 
-    <div class="container-fluid header">
-        <div class="d-flex" id="Top">
-            <div class="htItem">
-                    <h1><a href="index.html">Bad Optics</a></h1>
-                    <h4 id="subhead">post-structuralist solutions for a Bounded World</h4>
-                    <a href="javascript:void(0);" class="icon" onclick="navbar()">
-                        <i style="font-size:1.8em;" class="bi bi-list"></i>
-                    </a>
-            </div>
-            
-            <div class="headNav" id="headNav">
-                <ul>
-                    <li class="nav-item"><a href="music.html">Music</a></li>
-                    <li class="nav-item"><a href="videos.html">Videos</a></li>
-                    <li class="nav-item"><a href="shows.html">Shows</a></li>
-                    <li class="nav-item"><a href="merch.html">Merch</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="epk.html">Press</a></li>
-                </ul>
+    <nav>
+        <div class="container-fluid header">
+            <div class="d-flex" id="Top">
+                <div class="htItem">
+                        <h1><a href="index.html">Bad Optics</a></h1>
+                        <h4 id="subhead">post-structuralist solutions for a Bounded World</h4>
+                        <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                            <i style="font-size:1.8em;" class="bi bi-list"></i>
+                        </a>
+                </div>
+                
+                <div class="headNav" id="headNav">
+                    <ul>
+                        <li class="nav-item"><a href="music.html">Music</a></li>
+                        <li class="nav-item"><a href="videos.html">Videos</a></li>
+                        <li class="nav-item"><a href="shows.html">Shows</a></li>
+                        <li class="nav-item"><a href="merch.html">Merch</a></li>
+                        <li class="nav-item"><a href="about.html">About</a></li>
+                        <li class="nav-item"><a href="epk.html">Press</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-        function navbar() {
-          var x = document.getElementById("headNav");
-          if (x.className === "headNav") {
-            x.className += " responsive";
-          } else {
-            x.className = "headNav";
-          }
-        }
-    </script>
+        <script>
+            function navbar() {
+            var x = document.getElementById("headNav");
+            if (x.className === "headNav") {
+                x.className += " responsive";
+            } else {
+                x.className = "headNav";
+            }
+            }
+        </script>
+    </nav>
 
     <main>
         <div class="container">

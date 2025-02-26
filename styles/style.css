@@ -6,6 +6,10 @@
     --pink: rgba(199, 174, 173, 1);
 }
 
+html {
+  height: 100%;
+}
+
 body {
     background-image: url("../images/big-pink.png");
     background-repeat: repeat;
@@ -13,6 +17,12 @@ body {
     color: black;
     font-family: "Libre Franklin";
     font-weight: 600;
+    height: 100%;
+}
+
+main {
+  min-height: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5 {
@@ -308,6 +318,9 @@ footer {
   margin: 10px auto 0 auto;
   padding: 5px;
   text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footNav {
