@@ -99,6 +99,7 @@ a:visited {
 .htItem {
   display: flex;
   align-items: flex-end;
+  margin-right: 0;
 }
 
 .htItem a {
@@ -109,8 +110,8 @@ a:visited {
 .htItem .icon {
   display: none;
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 10px;
+  top: 10px;
 }
 
 .headNav {
@@ -124,11 +125,11 @@ a:visited {
 
 .headNav ul {
   list-style-type: none;
-  margin: 5px 0;
+  margin: 5px 0 0 0;
 }
 
 .headNav li {
-  padding: 5px 20px;
+  padding: 5px 20px 0 20px;
   display: inline-block;
 }
 
