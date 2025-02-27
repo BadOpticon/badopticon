@@ -126,46 +126,46 @@ a:hover {
 
 .nav-item {
   display: inline-block;
-  margin: 30px 2px 0 2px;
+  margin: 30px 2px 2px 2px;
   font-style: italic;
   text-transform: uppercase;
 }  
 
 .nav-item a {
-background-image: linear-gradient(
-  to right,
-  var(--yellow),
-  var(--yellow) 50%,
-  var(--red) 50%
-);
-background-size: 200% 100%;
-background-position: -100%;
-display: inline-block;
-padding: 0;
-position: relative;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    var(--yellow),
+    var(--yellow) 50%,
+    var(--red) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:before {
-content: '';
-background: var(--yellow);
-display: block;
-position: absolute;
-bottom: 1px;
-left: 0;
-width: 0;
-height: 2px;
-transition: all 0.3s ease-in-out;
+  content: '';
+  background: var(--yellow);
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-item a:hover {
-background-position: 0;
+  background-position: 0;
 }
 
 .nav-item a:hover::before {
-width: 100%;
+  width: 100%;
 }
 
 /* index */
@@ -216,6 +216,22 @@ width: 100%;
   margin-bottom: 10px;
 }
 
+.postHead {
+  margin: 30px 0 0 0;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.postHead h1,
+.postHead h2,
+.postHead h3 {
+  padding: auto;
+  color: var(--red);
+  text-shadow: 0px 2px 20px black;
+}
+
 .postItemOne a {
   color: black;
 }
@@ -231,7 +247,8 @@ width: 100%;
 
 /* music */
 .musicNav {
-  margin: 30px auto;
+  margin: 30px 0;
+  
 }
 
 .musicNav h2,
@@ -286,29 +303,32 @@ width: 100%;
   text-align: center;
 }
 
-.musicHead {
-  margin: 30px 0 0 0;
-  text-align: center;
-  justify-content: center;
-  padding: 5px;
-  background-color: black;
+/* videos */
+.videos.postHead {
+  background-color: var(--pink);
 }
 
-.musicHead h1,
-.musicHead h2,
-.musicHead h3 {
-  padding: auto;
-  color: var(--red);
-  text-shadow: 0px 2px 20px black;
+.post.MV {
+  border: none;
+  padding: 0;
+}
+
+.postItemOne.MV {
+  align-items: center;
+  padding: 0;
+  margin-left: 0;
+}
+
+.MV video {
+  width: 100%;
 }
 
 /* shows */
-.shows {
-  background-color: #1f1e1e;
-}
-
-:where(main.showdate) li {
-  font-size: 1.2rem;
+.bit {
+  margin-top: 30px;
+  max-width: 800px;
+  width: 100%;
+  justify-content: center;
 }
 
 /* footer */
@@ -398,11 +418,17 @@ footer {
     display: block;
     text-align: center;
   }
-
+  
   .musicNav {
     visibility: hidden;
     clear: both;
     display: none;
+  }
+
+  .post .nav-item {
+    visibility: hidden;
+    clear: both;
+    display: none;    
   }
 
   .postItemOne {
