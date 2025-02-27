@@ -22,7 +22,7 @@ body {
 
 main {
   min-height: 100%;
-  position: relative;
+  /* position: relative; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -32,6 +32,14 @@ h1, h2, h3, h4, h5 {
 
 h1, h2, h3, h4 {
   color: white;
+}
+
+h1 {
+  text-shadow: 1px 4px 1px var(--red);
+}
+
+h2, h3, h4 {
+  text-shadow: 1px 3px 1px var(--red);
 }
 
 h1 {
@@ -65,39 +73,37 @@ a {
 
 a:hover {
     color: var(--yellow);
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+a:visited {
+  color: var(--red);
+  text-decoration: none;
 }
 
 /* header */
 .header {
-  padding: 0 10px;
   background-color: black;
   overflow: hidden;
 }
 
 .header h1 {
-  text-shadow: 1px 4px 1px var(--red);
   margin-bottom: 0;
 }
 
 .header h4 {
   font-size: 0.7em;
-  text-shadow: 1px 3px 1px var(--red);
   margin-left: 1px;
-}
-
-.header a {
-  color: white;
-  text-decoration: none;
-}
-
-.header p {
-  font-size: 16px;
 }
 
 .htItem {
   display: flex;
   align-items: flex-end;
+}
+
+.htItem a {
+  color: white;
+  text-decoration: none;
 }
 
 .htItem .icon {
@@ -112,27 +118,29 @@ a:hover {
   align-items: flex-end;
 }
 
+.headNav p {
+  font-size: 16px;
+}
+
 .headNav ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin: 5px 0;
 }
 
 .headNav li {
-  padding: 0 20px;
+  padding: 5px 20px;
+  display: inline-block;
 }
 
-/* navbar */
-
-.nav-item {
-  display: inline-block;
-  margin: 30px 2px 2px 2px;
-  font-style: italic;
-  text-transform: uppercase;
-}  
+/* link animation */
+  .animLink {
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
 
 @media screen and (min-width: 992px) {
-  .nav-item a {
+  .animLink a {
     background-image: linear-gradient(
       to right,
       var(--yellow),
@@ -149,7 +157,7 @@ a:hover {
     transition: all 0.3s ease-in-out;
   }
 
-  .nav-item a:before {
+  .animLink a:before {
     content: '';
     background: var(--yellow);
     display: block;
@@ -161,50 +169,48 @@ a:hover {
     transition: all 0.3s ease-in-out;
   }
 
-  .nav-item a:hover {
+  .animLink a:hover {
     background-position: 0;
   }
 
-  .nav-item a:hover::before {
+  .animLink a:hover::before {
     width: 100%;
   }
 }
 
 /* index */
 .index {
+    display: flex;
+    top: 5px;
     justify-content: center;
     margin: auto;
 }
 
-.indexlink {
+.indexImg {
   padding: 0;
 }
 
-.indexlink img {
-    max-width: 1000px;
+.indexImg img {
     width: 100%;
-    border: 5px solid black;
+    border: 2px solid black;
 }
 
 /* main */
-.main {
-  padding-bottom: 20px;
+.title {
+  font-size: 2.5em;
+  margin: 20px auto;
+  text-align: center;
 }
 
-/* posts */
 .post {
-  margin: 0;
-  padding: 15px 15px 0px 15px;
+  padding: 10px 0 0 0;
   border: 4px solid black;
   background: var(--pink);
 }
 
-.post h1,
 .post h2,
 .post h3 {
   padding-bottom: 10px;
-  color: white;
-  text-shadow: 1px 3px 1px var(--red);
 }
 
 .post h5 {
@@ -219,19 +225,17 @@ a:hover {
 }
 
 .postHead {
-  margin: 30px 0 0 0;
-  padding: 5px;
-  text-align: center;
-  justify-content: center;
+  margin-top: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
   background-color: black;
 }
 
 .postHead h1,
 .postHead h2,
 .postHead h3 {
-  padding: auto;
   color: var(--red);
-  text-shadow: 0px 2px 20px black;
+  text-shadow: none;
 }
 
 .postItemOne a {
@@ -244,26 +248,17 @@ a:hover {
 }
 
 .postItemTwo {
-  text-align: center;
+  text-align: right;
 }
 
 /* music */
 .musicNav {
-  margin: 30px 0;
-  
-}
-
-.musicNav h2,
-.musicNav h3,
-.musicNav h4,
-.musicNav h5 {
-  text-shadow: 1px 3px 1px var(--red);
+  margin: 30px 0; 
 }
 
 .musicNav img {
  max-width: 150px;
  width: 100%;
- margin: auto;
 }
 
 .musicNavCont {
@@ -296,6 +291,7 @@ a:hover {
 
 .musicNavText {
   color: white;
+  text-shadow: 1px 3px 1px var(--red);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -306,14 +302,14 @@ a:hover {
 }
 
 /* videos */
-.post.MV {
-  border: none;
-  padding: 0;
-  background-color: none;
+.postItemTwo.MV {
+  text-align: left;
 }
 
 .MV video {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* shows */
@@ -343,6 +339,10 @@ footer {
 
 /* mobile */
 @media screen and (max-width: 992px) {
+  body {
+    background-image: none;
+  }
+
   .header h1,
   .header h2 {
     margin: 0;
@@ -418,10 +418,20 @@ footer {
     display: none;
   }
 
-  .post .nav-item {
+  .post .animLink {
     visibility: hidden;
     clear: both;
     display: none;    
+  }
+
+  .post {
+    border: none;
+    border-bottom: 4px solid black;
+  }
+
+  .postHead {
+    text-align: center;
+    margin-top: 10px;
   }
 
   .postItemOne {
