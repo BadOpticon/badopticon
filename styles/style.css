@@ -70,7 +70,7 @@ h5 {
 }
 
 p {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 a {
@@ -233,7 +233,7 @@ a:visited {
 }
 
 .postHead {
-  padding: 10px 30px;
+  padding: 10px 20px;
   background-color: black;
 }
 
@@ -254,8 +254,20 @@ a:visited {
 }
 
 .postItemTwo {
-  text-align: right;
+  text-align: center;
 }
+
+  .postItemTwo ul {
+    list-style-type: none;
+    font-size: 12px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .postItemTwo li {
+    padding: 5px 10px;
+    display: inline-block;
+  }
 
 .bottom {
   border-bottom: none;
@@ -263,7 +275,7 @@ a:visited {
 
 /* music */
 .musicNav {
-  padding: 10px 50px;
+  padding: 10px 30px;
   background-color: var(--redbrown);
 }
 
