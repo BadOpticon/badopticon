@@ -3,6 +3,7 @@
 :root {
     --offwhite: rgba(232, 231, 227, 1);
     --red: rgba(163, 10, 2, 1);
+    --salmon: rgba(251, 99, 88, 1);
     --yellow: rgba(237, 222, 5, 1);
     --pink: rgba(199, 174, 173, 1);
     --redbrown: rgba(80, 54, 53, 1);
@@ -105,7 +106,6 @@ a:visited {
 .htItem {
   display: flex;
   align-items: flex-end;
-  margin-right: 0;
 }
 
 .htItem a {
@@ -122,17 +122,13 @@ a:visited {
 
 .headNav {
   display: flex;
-  align-items: flex-end;
-}
-
-.headNav p {
-  font-size: 16px;
+  align-self: flex-end;
 }
 
 .headNav ul {
+  font-size: 18px;
   list-style-type: none;
-  margin: 5px 0 0 0;
-  padding-left: 0;
+  margin-bottom: 0;
 }
 
 .headNav li {
@@ -267,9 +263,7 @@ a:visited {
 
 /* music */
 .musicNav {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px 50px;
+  padding: 10px 50px;
   background-color: var(--redbrown);
 }
 
@@ -278,20 +272,21 @@ a:visited {
  width: 100%;
 }
 
-.mvHead {
-  margin-top: auto;
-  margin-bottom: auto;
+.musicNavHead {
+  display: flex;
+  width: 100%;
+}
+
+.musicNavItem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
 }
 
 .musicNavCont {
   position: relative;
   display: inline-block;
-}
-
-.musicNavImage {
-  display: block;
-  width: 100%;
-  height: auto;
+  margin-right: 40px;
 }
 
 .musicNavOverlay {
@@ -380,7 +375,6 @@ footer {
   .htItem a.icon {
     display: block;
     right: 15px;
-
   }
 
   #subhead {
@@ -389,8 +383,9 @@ footer {
     display: none;
   }
 
-  .headNav ul {
-    display: none;
+  .headnav li {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 
   .headNav a:active {
@@ -432,7 +427,6 @@ footer {
 
   .postHead {
     text-align: center;
-    margin-top: 10px;
   }
 
   .postItemOne {
