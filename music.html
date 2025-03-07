@@ -139,18 +139,74 @@
                     <p>May 1st, 2025</p>
 
                     <h5>Track List</h5>
+
+                    <div class="tracklist">
                         <p>01. Upside Down in the Attic <br />
-                        02. Falling from High Places <br />
-                        03. Swan <br />
-                        04. Heaven in Disguise <br />
-                        05. Rats Rats Rats Rats Rats Rats <br />
-                        06. Motives <br />
-                        07. Behold! the Disappointment Machine <br />
-                        08. Art Is for Everyone <br />
-                        09. The Bounded World <br />
-                        10. Everything Is Getting Worse <br />
-                        11. Tomorrow I Will Be Perfect <br />
-                        12. Spectral Streams Quenched Sad Upon the Point of Flames</p>
+                        02. Falling from High Places <a class="lyrics-link" onclick="toggleFalling()" href="javascript:;">(Lyrics)</a>
+                            <div class="lyrics-overlay" id="lyricsFalling" style="display:none;">
+                                <p>Sing upon the moonlight, all dog-like,<br />
+                                    simple, stupid, and happy<br />
+                                    Clasp the muzzle when you need to<br />
+                                    Scold me when you feel the need be<br />
+                                    Sybil's on the edge of the bed<br />
+                                    Cherubs marching out of her head<br />
+                                    Beauty that I never could hold<br />
+                                    Whisper to me 'til I grow cold</p>
+
+                                <p>Cut away, cut away<br />
+                                    Strip all those feelings out<br />
+                                    Muscle and flesh all that's<br />
+                                    left after excising -<br />
+                                <em>Doubt yourself, doubt yourself<br />
+                                    You are not worthy of</em><br />
+                                    love like the deafening<br />
+                                    buzz of a thousand bugs</p>
+                                
+                                <p>Picture on the mantle frame of<br />
+                                    a dead dove in a verdant field<br />
+                                    I obediently wait for you<br />
+                                    to catch my gaze so I can feel<br />
+                                    Sybil's on the edge of the room<br />
+                                    Violets slowly come in to bloom<br />
+                                    Giants lumbering in the hall<br />
+                                    Pulling me up out of her thrall</p>
+
+                                <p>Cut away, cut away<br />
+                                    Strip all those feelings out<br />
+                                    Muscle and flesh, all that's<br />
+                                    left after excising -<br />
+                                <em>Pitch yourself, pitch yourself,<br />
+                                    you are not moving me</em><br />
+                                    All that I've felt<br />
+                                    Regarded as futility</p>
+
+                                <p>I am a dog in a<br />
+                                    cage in the living room<br />
+                                    Preening myself, only<br />
+                                    hoping to amuse you<br />
+                                    Am I good? Am I good?<br />
+                                    I only wish to please<br />
+                                    I'd break my neck<br />
+                                    Just to get you<br />
+                                    to look at me</p>
+
+                                <p>Cut me free so I can fly<br />
+                                    Clip my feet and watch me try<br />
+                                    Plant poppies upon my grave<br />
+                                    Grown sick from watching shadows <strong>PLAY</strong></p>
+                            </div>
+                            
+                        <p>03. Swan <a class="lyrics-link" id="swan" href="javascript:;">(Lyrics)</a><br />
+                        04. Heaven in Disguise <a class="lyrics-link" id="heaven" href="javascript:;">(Lyrics)</a><br />
+                        05. Rats Rats Rats Rats Rats Rats <a class="lyrics-link" id="rats" href="javascript:;">(Lyrics)</a><br />
+                        06. Motives <a class="lyrics-link" id="motives" href="javascript:;">(Lyrics)</a><br />
+                        07. Behold! the Disappointment Machine <a class="lyrics-link" id="disappointment" href="javascript:;">(Lyrics)</a><br />
+                        08. Art Is for Everyone <a class="lyrics-link" id="art" href="javascript:;">(Lyrics)</a><br />
+                        09. The Bounded World <a class="lyrics-link" id="bounded" href="javascript:;">(Lyrics)</a><br />
+                        10. Everything Is Getting Worse <a class="lyrics-link" id="everything" href="javascript:;">(Lyrics)</a><br />
+                        11. Tomorrow I Will Be Perfect <a class="lyrics-link" id="tomorrow" href="javascript:;">(Lyrics)</a><br />
+                        12. Spectral Streams Quenched Sad Upon the Point of Flames <a class="lyrics-link" id="spectral" href="javascript:;">(Lyrics)</a></p>
+                    </div>
 
                     <p style="font-size:0.7em">All music & lyrics written by Christian J. Hidell<br />
                         except for <em>Motives</em> written by Alex Warton</p>
@@ -159,7 +215,7 @@
 
                     <p><span style="font-size:1.1em; font-weight:bold;">Bad Optics</span><br />
                     Christian J. Hidell - lead vocals, guitar, keyboards & synthesizers, glockenspiel<br />
-                    Alex Warton - guitar, trumpet, background Vocals<br />
+                    Alex Warton - guitar, trumpet, background vocals<br />
                     Stephanie Jones - bass, background vocals<br />
                     Joshua Ihler - drums, background vocals</p>
 
@@ -186,15 +242,18 @@
 
                     <ul>
                         <li><a href="javascript:;" id="tbwArtFront">Front Cover</a></li>
+                        |
                         <!-- <li><a href="javascript:;" id="tbwArtInsertL">Left Insert</a></li>
-                        <li><a href="javascript:;" id="tbwArtInsertR">Right Insert</a></li> -->
+                        |
+                        <li><a href="javascript:;" id="tbwArtInsertR">Right Insert</a></li>
+                        |-->
                         <li><a href="javascript:;" id="tbwArtBack">Back Cover</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="row post" id="PA" style="border-top: none;">
-                <div class="col-lg postItemOne bottom">
+            <div class="row post bottom" id="PA" style="border-top: none;">
+                <div class="col-lg postItemOne">
                     <h3>Pax Americana (2022)</h3>
 
                     <h5>Release Date</h5>
@@ -243,8 +302,11 @@
 
                     <ul>
                         <li><a href="javascript:;" id="paxArtFront">Front Cover</a></li>
+                        |
                         <li><a href="javascript:;" id="paxArtInsertL">Left Insert</a></li>
+                        |
                         <li><a href="javascript:;" id="paxArtInsertR">Right Insert</a></li>
+                        |
                         <li><a href="javascript:;" id="paxArtBack">Back Cover</a></li>
                     </ul>
                 </div>
@@ -295,7 +357,9 @@
                     </a>
                     <ul>
                         <li><a href="javascript:;" id="tvArtFront">Front Cover</a></li>
+                        |
                         <li><a href="javascript:;" id="tvArtInsert">Insert</a></li>
+                        |
                         <li><a href="javascript:;" id="tvArtBack">Back Cover</a></li>
                     </ul>
                 </div>
@@ -345,7 +409,7 @@
             </div>
 
             <div class="row post bottom" id="WSoP" style="border-top: none;">
-                <div class="col-lg postItemOne bottom">
+                <div class="col-lg postItemOne">
                     <h3>Warm Strokes of Pragmatism (2018)</h3>
 
                     <h5>Release Date</h5>
@@ -385,6 +449,7 @@
 
                     <ul>
                         <li><a href="javascript:;" id="wsopArtFront">Front Cover</a></li>
+                        |
                         <li><a href="javascript:;" id="wsopArtBack">Back Cover</a></li>
                     </ul>
                 </div>
@@ -408,7 +473,7 @@
 </body>
 
  <!-- scripts -->
- <script src="scripts/album-art.js"></script>
+ <script src="scripts/music.js"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </html>
