@@ -1,15 +1,197 @@
 /*--------------------/
-/      LYRICS LINKS   /
+/    LYRICS LINKS     /
 /--------------------*/ 
 
 /* The Bounded World */
 
-function toggleFalling() {
-    var element = document.getElementById("lyricsFalling");
-    if (element.style.display == "none") {
-        element.style.display = "block";
+/* 02 */ function toggleFalling() {
+    var div = document.getElementById("lyricsFalling");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
     } else {
-        element.style.display = "none";
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleSwan() {
+    var div = document.getElementById("lyricsSwan");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 04 */ function toggleHeaven() {
+    var div = document.getElementById("lyricsHeaven");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 05 */ function toggleRats() {
+    var div = document.getElementById("lyricsRats");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 06 */ function toggleMotives() {
+    var div = document.getElementById("lyricsMotives");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 07 */ function toggleDisappointment() {
+    var div = document.getElementById("lyricsDisappointment");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 08 */ function toggleArt() {
+    var div = document.getElementById("lyricsArt");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 09 */ function toggleBounded() {
+    var div = document.getElementById("lyricsBounded");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 10 */ function toggleEverything() {
+    var div = document.getElementById("lyricsEverything");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 11 */ function toggleTomorrow() {
+    var div = document.getElementById("lyricsTomorrow");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 05 */ function toggleSpectral() {
+    var div = document.getElementById("lyricsSpectral");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* Pax Americana */
+
+/* 01 */ function toggleDrowning() {
+    var div = document.getElementById("lyricsDrowning");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 02 */ function toggleProxy() {
+    var div = document.getElementById("lyricsProxy");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleGaullist() {
+    var div = document.getElementById("lyricsGaullist");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 04 */ function toggleTurnscrews() {
+    var div = document.getElementById("lyricsTurnscrews");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 05 */ function toggleMirror() {
+    var div = document.getElementById("lyricsMirror");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 06 */ function toggleSubtract() {
+    var div = document.getElementById("lyricsSubtract");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 07 */ function togglePlant() {
+    var div = document.getElementById("lyricsPlant");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 08 */ function togglePain() {
+    var div = document.getElementById("lyricsPain");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 09 */ function toggleIsopropyl() {
+    var div = document.getElementById("lyricsIsopropyl");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 10 */ function toggleNoose() {
+    var div = document.getElementById("lyricsNoose");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
     }
 }
 

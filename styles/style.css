@@ -335,23 +335,41 @@ a {
     text-align: center;
   }
 
-.tracklist p {
+.tracklist>p {
  margin-bottom: 0;
 }
 
-.lyrics-link {
-  font-size: 0.7em;
+.tracklist a {
+  font-size: .75em;
   color: var(--red) !important;
 }
 
-  .lyrics-link:hover {
+  .tracklist a:hover {
     color: var(--yellow) !important;
   }
 
   .lyrics-overlay {
-      display: none;
-      padding: 1% 5%;
+      background-color: var(--offwhite);
+      max-height: 0;
+      width: 40rem;
+      overflow: hidden;
+      transition: max-height ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
   }
+
+   .lyrics-overlay.active {
+    max-height: 1500px;
+    padding: 10px 20px;
+    margin: 10px;
+   }
+
+  .lyrics-chorus {
+    margin-left: .5em;
+  }
+
+.writing-credits {
+  font-size: .75em;
+  padding-top: 10px;
+}
 
 /* videos */
 
@@ -426,7 +444,7 @@ footer {
     display: none;
   }
 
-  .headNav a:active {
+  .headNav a:hover {
     color: var(--yellow);
   }
 
