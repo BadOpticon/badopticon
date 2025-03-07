@@ -358,12 +358,11 @@ a {
       max-height: 0;
       width: 40rem;
       overflow: hidden;
-      transition: max-height ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
+      transition: max-height ease-in-out 1000ms, width ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
   }
 
    .lyrics-overlay.active {
     max-height: 1500px;
-    width: 100%;
     padding: 10px 20px;
     margin: 10px;
    }
@@ -479,6 +478,11 @@ footer {
     clear: both;
     display: none;
   }
+
+  .lyrics-overlay {
+    width: 100%;
+    transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
+}
 
   .lyrics-overlay.active {
     margin-left: 0;

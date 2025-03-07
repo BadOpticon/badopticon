@@ -195,6 +195,84 @@
     }
 }
 
+/* The Visitor */
+
+/* 01 */ function toggleIndustry() {
+    var div = document.getElementById("lyricsIndustry");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 02 */ function toggleBlink() {
+    var div = document.getElementById("lyricsBlink");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleVisitor() {
+    var div = document.getElementById("lyricsVisitor");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* Beach Front Property - Dungeon Crawler */
+
+/* 01 */ function toggleBFP() {
+    var div = document.getElementById("lyricsBFP");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleDungeon() {
+    var div = document.getElementById("lyricsDungeon");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* Warm Strokes of Pragmatism */
+
+/* 01 */ function toggleProxyWS() {
+    var div = document.getElementById("lyricsProxyWS");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 02 */ function toggleFactory() {
+    var div = document.getElementById("lyricsFactory");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleHostel() {
+    var div = document.getElementById("lyricsHostel");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
 /*--------------------/
 /      ALBUM ART      /
 /--------------------*/ 
