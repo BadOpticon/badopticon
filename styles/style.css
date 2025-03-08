@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --offwhite: rgba(232, 231, 227, 1);
@@ -45,28 +46,28 @@ h1, h2, h3, h4, h5 {
   }
 
 h1 {
-  font-size: 50px;
+  font-size: 48px;
   text-shadow: 1px 4px 1px var(--red);
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 36px;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 28px;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 h5 {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 a {
@@ -75,8 +76,8 @@ a {
 }
 
   a:hover {
-      color: var(--yellow);
-      text-decoration: none;
+    color: var(--yellow);
+    text-decoration: none;
   }
 
   a:active {
@@ -197,11 +198,10 @@ a {
   padding: 5px;
 }
 
-.title {
-  font-size: 2.5em;
-  margin: 30px auto;
-  text-align: center;
-}
+  .topTitle h1 {
+    margin: 30px auto;
+    text-align: center;
+  }
 
 .post {
   padding: 15px 20px;
@@ -373,7 +373,6 @@ a {
 
   .lyrics-overlay {
       background-color: var(--offwhite);
-      colors: #000 !important;
       max-height: 0;
       width: 30rem;
       padding-left: 10px;
@@ -412,15 +411,27 @@ a {
 |                       VIDEOS                        |
 \*===================================================*/ 
 
-.postItemTwo.MV {
+.videos>.postItemTwo {
   text-align: left;
 }
 
-.MV video {
+.youtube {
+  position: relative;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  max-width: 1280px;
+  margin: 0 auto;
 }
+  
+  .youtube iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
 /*====================================================\
 |                        SHOWS                        |
@@ -432,6 +443,29 @@ a {
   width: 100%;
   justify-content: center;
 }
+
+/*====================================================\
+|                         NEWS                        |
+\*===================================================*/ 
+
+.news>.postHead,
+.news>.post {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+  .news>.post {
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+  }
+
+  .news>.post h3,
+  .news>.post h4 {
+    color: var(--red);
+    text-shadow: none;
+    text-decoration: underline;
+  }
 
 /*====================================================\
 |                       FOOTER                        |
@@ -459,6 +493,22 @@ footer {
     display: inline-block;
     padding: 10px;
   }
+
+  .footNav img {
+    color: var(--red);
+    max-width: 16px;
+    width: 100%;
+    padding-top: 0;
+    justify-content: center;
+  }
+
+    .footNav a:hover {
+      color: var(--yellow);
+    }
+
+    .footNav a:active {
+      color: var(--yellow);
+    }
 
 /*====================================================\
 |                   MEDIA QUERIES                     |
@@ -501,7 +551,7 @@ footer {
     }
 
       .headNav.responsive ul {
-        max-height: 100px;
+        max-height: 150px;
         padding: 7px 5px;
       }
 
@@ -555,11 +605,29 @@ footer {
     text-align: center;
   }
 
-  .postItemOne {
+  .music>.postItemOne {
     order: 2;
   }
 
-  .postItemTwo {
+  .music>.postItemTwo {
     order: 1;
+  }
+
+  .news>.postHead,
+  .news>.post {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .header h1 {
+    font-size: 2em;
+  }
+
+  .icon {
+    font-size: 1.5em;
+    right: 1px;
+    top: 1px;
   }
 }
