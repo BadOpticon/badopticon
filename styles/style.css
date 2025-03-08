@@ -104,10 +104,10 @@ a {
     margin-bottom: 0;
   }
 
-  .header h4 {
-    font-size: 0.7em;
-    margin-left: 1px;
-  }
+#subhead {
+  font-size: 0.7em;
+  margin-left: 1px;
+}
 
 .htItem {
   display: flex;
@@ -283,6 +283,10 @@ a {
     display: inline-block;
   }
 
+.small {
+  font-size: .7em;
+}
+
 /* music */
 
 .musicNav {
@@ -358,23 +362,32 @@ a {
       background-color: var(--offwhite);
       colors: #000 !important;
       max-height: 0;
-      width: 40rem;
+      width: 30rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-left: 5px;
+      margin-right: 5px;
       overflow: hidden;
       transition: max-height ease-in-out 1000ms, width ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
   }
 
    .lyrics-overlay.active {
     max-height: 1500px;
-    padding: 10px 20px;
-    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
    }
 
   .lyrics-chorus {
-    margin-left: .5em;
+    text-align: right;
+  }
+
+  .lyrics-center {
+    text-align: center;
   }
 
 .writing-credits {
-  font-size: .75em;
   padding-top: 10px;
 }
 
@@ -424,55 +437,67 @@ footer {
     border: none;
   }
 
-  a:hover {
+  a {
     color: var(--red);
   }
 
-  .header a {
-    color: var(--offwhite);
+  #subhead {
+    display: none;
   }
 
-  .header a:hover {
-    text-decoration: none;
+  .icon a {
+    color: var(--offwhite)
   }
+
+    .icon a:hover {
+      color: var(--offwhite)
+    }
+
+    .icon a:active {
+      color: var(--offwhite)
+    }
+
+    .headNav ul {
+      display: inline;
+      max-height: 0;
+      overflow: hidden;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: var(--red);
+      text-align: center;
+      transition: max-height 500ms, padding 800ms;
+    }
+
+      .headNav.responsive ul {
+        max-height: 100px;
+        padding: 7px 5px;
+      }
+
+      .headnav li {
+        text-align: center;
+      }
+
+    .headNav a:hover {
+      color: var(--yellow);
+    }
+
+    .headNav.responsive {
+      position: relative;
+    }
+    
+      .headNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .htItem a.icon {
+        display: block;
+        right: 15px;
+    }
 
   #Top {
     flex-direction: column;
-  }
-  
-  .htItem a.icon {
-    display: block;
-    right: 15px;
-  }
-
-  #subhead {
-    visibility: hidden;
-    clear: both;
-    display: none;
-  }
-
-  .headNav ul {
-    display: none;
-  }
-
-  .headNav a:hover {
-    color: var(--yellow);
-  }
-
-  .headNav.responsive {
-    position: relative;
-  }
-  
-  .headNav.responsive .icon {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  .headNav.responsive ul,
-  .headNav.responsive a {
-    float: none;
-    display: block;
   }
   
   .musicNav {
@@ -481,21 +506,16 @@ footer {
     display: none;
   }
 
-  .lyrics-overlay {
-    width: 100%;
-    transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
-}
-
-  .lyrics-overlay.active {
-    margin-left: 0;
-    padding-left: 5px;
+    .lyrics-overlay {
+      width: 100%;
+      transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
   }
 
-  .post .animLink {
-    visibility: hidden;
-    clear: both;
-    display: none;    
-  }
+    .post .animLink {
+      visibility: hidden;
+      clear: both;
+      display: none;    
+    }
 
   .post {
     border: none;
