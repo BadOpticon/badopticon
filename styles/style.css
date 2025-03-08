@@ -41,16 +41,13 @@ h1, h2, h3, h4, h5 {
     color: var(--offwhite);
   }
 
+  h2, h3, h4 {
+    text-shadow: 1px 3px 1px var(--red);
+  }
+
 h1 {
+  font-size: 50px;
   text-shadow: 1px 4px 1px var(--red);
-}
-
-h2, h3, h4 {
-  text-shadow: 1px 3px 1px var(--red);
-}
-
-h1 {
-    font-size: 50px;
 }
 
 h2 {
@@ -93,7 +90,9 @@ a {
     text-decoration: none;
   }
 
-/* header */
+/*====================================================\
+|                  HEADER / NAVBAR                    |
+\*===================================================*/ 
 
 .header {
   background-color: black;
@@ -129,12 +128,14 @@ a {
 .headNav {
   display: flex;
   align-self: flex-end;
+  justify-content: end;
 }
 
   .headNav ul {
     font-size: 18px;
     list-style-type: none;
     margin-bottom: 0;
+    padding-left: 0;
   }
 
   .headNav li {
@@ -142,71 +143,55 @@ a {
     display: inline-block;
   }
 
-/* link animation */
-  .animLink {
-    font-style: italic;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-
-  @media screen and (min-width: 992px) {
-    .animLink a {
-      background-image: linear-gradient(
-        to right,
-        var(--yellow),
-        var(--yellow) 50%,
-        var(--red) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      display: inline-block;
-      padding: 0;
-      position: relative;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease-in-out;
+  /* link animation */
+    .animLink {
+      font-style: italic;
+      text-transform: uppercase;
+      margin-bottom: 5px;
     }
 
-    .animLink a:before {
-      content: '';
-      background: var(--yellow);
-      display: block;
-      position: absolute;
-      bottom: 1px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      transition: all 0.3s ease-in-out;
+    @media screen and (min-width: 992px) {
+      .animLink a {
+        background-image: linear-gradient(
+          to right,
+          var(--yellow),
+          var(--yellow) 50%,
+          var(--red) 50%
+        );
+        background-size: 200% 100%;
+        background-position: -100%;
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .animLink a:before {
+        content: '';
+        background: var(--yellow);
+        display: block;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .animLink a:hover {
+        background-position: 0;
+      }
+
+      .animLink a:hover::before {
+        width: 100%;
+      }
     }
 
-    .animLink a:hover {
-      background-position: 0;
-    }
-
-    .animLink a:hover::before {
-      width: 100%;
-    }
-  }
-
-/* index */
-
-.index {
-    display: flex;
-    top: 5px;
-    justify-content: center;
-    margin: auto;
-}
-
-.indexImg {
-  padding: 0;
-}
-
-  .indexImg img {
-      width: 100%;
-      border: 2px solid black;
-  }
-
-/* main */
+/*====================================================\
+|                        MAIN                         |
+\*===================================================*/ 
 
 .topTitle {
   padding: 5px;
@@ -287,7 +272,35 @@ a {
   font-size: .7em;
 }
 
-/* music */
+.return {
+  font-size:0.7em;
+  margin-top: 40px;
+}
+
+
+/*====================================================\
+|                       INDEX                         |
+\*===================================================*/ 
+
+.index {
+    display: flex;
+    top: 5px;
+    justify-content: center;
+    margin: auto;
+}
+
+.indexImg {
+  padding: 0;
+}
+
+  .indexImg img {
+      width: 100%;
+      border: 2px solid black;
+  }
+
+/*====================================================\
+|                       MUSIC                         |
+\*===================================================*/ 
 
 .musicNav {
   padding: 10px 30px;
@@ -379,19 +392,25 @@ a {
     margin-bottom: 5px;
    }
 
-  .lyrics-chorus {
-    text-align: right;
-  }
+.lyrics-chorus {
+  text-align: right;
+}
 
-  .lyrics-center {
-    text-align: center;
-  }
+.lyrics-center {
+  text-align: center;
+}
 
 .writing-credits {
   padding-top: 10px;
 }
 
-/* videos */
+.personnel {
+  font-size:1.1em; font-weight:bold;
+}
+
+/*====================================================\
+|                       VIDEOS                        |
+\*===================================================*/ 
 
 .postItemTwo.MV {
   text-align: left;
@@ -403,7 +422,9 @@ a {
   padding: 0;
 }
 
-/* shows */
+/*====================================================\
+|                        SHOWS                        |
+\*===================================================*/ 
 
 .bit {
   margin-top: 30px;
@@ -412,7 +433,9 @@ a {
   justify-content: center;
 }
 
-/* footer */
+/*====================================================\
+|                       FOOTER                        |
+\*===================================================*/ 
 
 footer {
   background-color: black;
@@ -430,7 +453,9 @@ footer {
   margin: 10px;
 }
 
-/* mobile */
+/*====================================================\
+|                   MEDIA QUERIES                     |
+\*===================================================*/ 
 
 @media screen and (max-width: 992px) {
   main {
@@ -511,11 +536,13 @@ footer {
       transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
   }
 
-    .post .animLink {
-      visibility: hidden;
-      clear: both;
-      display: none;    
-    }
+  .return a {
+    color: var(--red);
+  }
+
+   .return a:hover {
+    color: var(--yellow)
+   }
 
   .post {
     border: none;
