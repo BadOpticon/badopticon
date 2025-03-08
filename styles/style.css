@@ -18,7 +18,7 @@ body {
     background-color: var(--pink);
     background-image: url("../images/big-pink.png");
     background-size: auto;
-    background-position: fixed;
+    background-position: center;
     color: black;
     font-family: "Libre Franklin";
     font-weight: 600;
@@ -448,6 +448,10 @@ a {
 |                         NEWS                        |
 \*===================================================*/ 
 
+.news {
+  margin-bottom: 10px;
+}
+
 .news>.postHead,
 .news>.post {
   margin-left: 2em;
@@ -517,6 +521,10 @@ footer {
 @media screen and (max-width: 992px) {
   main {
     border: none;
+  }
+
+  body {
+    background-size: cover;
   }
 
   a {
@@ -611,6 +619,10 @@ footer {
 
   .music>.postItemTwo {
     order: 1;
+  }
+
+  .youtube {
+    margin-bottom: 10px;
   }
 
   .news>.postHead,
