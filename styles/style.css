@@ -7,7 +7,6 @@
     --yellow: rgba(237, 222, 5, 1);
     --pink: rgba(199, 174, 173, 1);
     --redbrown: rgba(80, 54, 53, 1);
-
 }
 
 html {
@@ -118,12 +117,13 @@ a {
     text-decoration: none;
   }
 
-  .htItem .icon {
-    display: none;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-  }
+.icon {
+  font-size: 1.8em;
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
 .headNav {
   display: flex;
@@ -214,11 +214,6 @@ a {
     padding-bottom: 10px;
   }
 
-  .post h5 {
-    text-decoration: underline;
-    margin-bottom: 0;
-  }
-
   .post img {
     max-width: 450px;
     width: 100%;
@@ -228,6 +223,12 @@ a {
   .post.bottom {
     border-bottom: none;
   }
+
+    .post.music h5,
+    .post.videos h5 {
+      text-decoration: underline;
+      margin-bottom: 0;
+    }
 
 .postHead {
   padding: 10px 20px;
@@ -276,7 +277,6 @@ a {
   font-size:0.7em;
   margin-top: 40px;
 }
-
 
 /*====================================================\
 |                       INDEX                         |
@@ -440,7 +440,6 @@ a {
 footer {
   background-color: black;
   color: var(--offwhite);
-  margin: 0 auto;
   padding: 5px;
   text-align: center;
   position: relative;
@@ -449,9 +448,17 @@ footer {
 }
 
 .footNav {
-  justify-content: center;
   margin: 10px;
 }
+
+  .footNav ul {
+    list-style-type: none;
+  }
+
+  .footNav li {
+    display: inline-block;
+    padding: 10px;
+  }
 
 /*====================================================\
 |                   MEDIA QUERIES                     |
@@ -543,11 +550,6 @@ footer {
    .return a:hover {
     color: var(--yellow)
    }
-
-  .post {
-    border: none;
-    border-bottom: 4px solid black;
-  }
 
   .postHead {
     text-align: center;

@@ -27,7 +27,7 @@
                             <h1><a href="index.html">Bad Optics</a></h1>
                             <h4 id="subhead">post-structuralist solutions for a Bounded World</h4>
                             <a href="javascript:void(0);" class="icon" onclick="navbar()">
-                                <i style="font-size:1.8em;" class="bi bi-list"></i>
+                                <i class="bi bi-list"></i>
                             </a>
                 </div>
                     
@@ -43,41 +43,31 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            function navbar() {
-            var x = document.getElementById("headNav");
-            if (x.className === "headNav") {
-                x.className += " responsive";
-            } else {
-                x.className = "headNav";
-            }
-            }
-        </script>
     </nav>
 
     <main>
-        <h2 class="title">Merch</h2>
+        <div class="container-fluid topTitle">
+            <h2 class="title">Merch</h2>
+        </div>
 
 
     </main>
 
     <footer>
         <div class="row footNav">
-            <div class="col-sm-1">
-                <a href="https://www.instagram.com/bad.optics" target="_blank"><i class="bi bi-instagram"></i></a>
-            </div>
-            <div class="col-sm-1">
-                <a href="https://www.facebook.com/badopticsband" target="_blank"><i class="bi bi-facebook"></i></a>
+            <ul>
+                <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/badopticsband" target="_blank"><i class="bi bi-facebook"></i></a></li>
             </div>
         </div>
     
-        <p style="font-size:0.7em">Copyright 2025 Bad Optics, LLC</p>
+        <p class="small">Copyright 2025 Bad Optics, LLC</p>
      </footer>
     
     </body>
     
-     <!-- scripts -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- scripts -->
+<script src="scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
 </html>
