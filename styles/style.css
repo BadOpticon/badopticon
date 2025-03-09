@@ -407,6 +407,14 @@ a {
   font-size:1.1em; font-weight:bold;
 }
 
+.albumBuy {
+  text-decoration: none !important;
+}
+
+  .albumBuy a:hover {
+    color: var(--yellow);
+  }
+
 /*====================================================\
 |                       VIDEOS                        |
 \*===================================================*/ 
