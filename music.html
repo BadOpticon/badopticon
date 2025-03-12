@@ -60,8 +60,8 @@
             <div class="musicNavHead">
                 <div class="musicNavItem">
                     <div class="musicNavCont">
-                        <a href="#TBW">
-                        <img src="images/tbw/bounded-world-cover-color-icon.png" />
+                        <a onclick="jump('TBW')" href="javascript:;">
+                        <img src="images/tbw/bounded-world-cover-icon.png" />
                         <div class="musicNavOverlay">
                             <h5 class="musicNavText">The Bounded World</h5>
                         </div>
@@ -69,7 +69,7 @@
                     </div>
 
                     <div class="musicNavCont">
-                        <a href="#PA">
+                        <a onclick="jump('PA')" href="javascript:;">
                         <img src="images/pax/pax-americana-cover-icon.png" />
                         <div class="musicNavOverlay">
                             <h5 class="musicNavText">Pax Americana</h5>
@@ -80,7 +80,7 @@
 
                 <div class="musicNavItem">
                     <div class="musicNavCont">
-                        <a href="#TV">
+                        <a onclick="jump('TV')" href="javascript:;">
                         <img src="images/visitor/the-visitor-cover-icon.png" />
                         <div class="musicNavOverlay">
                             <h5 class="musicNavText">The Visitor</h5>
@@ -89,7 +89,7 @@
                     </div>
 
                     <div class="musicNavCont">
-                        <a href="#BFP">
+                        <a onclick="jump('BFP')" href="javascript:;">
                         <img src="images/bfp/beach-front-cover-icon.png" />
                         <div class="musicNavOverlay">
                             <h5 class="musicNavText" style="font-size:.9em;">Beach Front Property - Dungeon Crawler</h5>
@@ -98,7 +98,7 @@
                     </div>
 
                     <div class="musicNavCont">
-                        <a href="#WSoP">
+                        <a onclick="jump('WSoP')" href="javascript:;">
                         <img src="images/wsop/warm-strokes-cover-icon.png" />
                         <div class="musicNavOverlay">
                             <h5 class="musicNavText">Warm Strokes of Pragmatism</h5>
@@ -712,28 +712,36 @@
                     <p>Recorded & mixed at the Juice Reserve from May - December 2024 <br />
                     Produced by Christian J. Hidell & Jake McCaffrey<br />
                     Mixed & engineered by Jake McCaffrey<br />
-                    Additional mixing by Garrett <br />
+                    Additional mixing by Garrett Reynolds<br />
                     Mastered by Chris Hanzsek at <a href="http://hanzsekaudio.com/" target="_blank">Hanzsek Audio</a><br />
                     Album art by Joshua Ihler</p>
 
                     <div class="return animLink" style="text-align:left;">
-                        <p><a href="#Top">Return to top</a></p>
+                        <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
                     </div>
                 </div>
 
                 <div class="col-md-4 postItemTwo">
-                    <a id="tbw-link" href="images/tbw/bounded-world-cover-color-1000.jpg" target="_blank">
-                        <img id="tbw-art" src="images/tbw/bounded-world-cover-color-1000.jpg">
+                    <a id="tbw-link" href="images/tbw/the-bounded-world-cover-1000.png" target="_blank">
+                        <img id="tbw-art" src="images/tbw/the-bounded-world-cover-1000.png">
                     </a>
 
-                    <ul>
+                    <ul class="art-link-x">
                         <li><a href="javascript:;" id="tbwArtFront">Front Cover</a></li>
                         |
-                        <!-- <li><a href="javascript:;" id="tbwArtInsertL">Left Insert</a></li>
+                        <li><a href="javascript:;" id="tbwArtInsertL">Left Insert</a></li>
                         |
                         <li><a href="javascript:;" id="tbwArtInsertR">Right Insert</a></li>
-                        |-->
+                        |
+                        <li><a href="javascript:;" id="tbwArtDisc">Disc Art</a></li>
+                        |
                         <li><a href="javascript:;" id="tbwArtBack">Back Cover</a></li>
+                    </ul>
+
+                    <ul class="art-link-y">
+                        <li><a href="javascript:;" id="fallingSingleArt">Falling from High Places Single Art</a></li>
+                        <li><a href="javascript:;" id="tbwSingleArt">The Bounded World Single Art</a></li>
+                        <li><a href="javascript:;" id="swanSingleArt">Swan Single Art</a></li>
                     </ul>
                 </div>
             </div>
@@ -1215,7 +1223,7 @@
                         Album art by Jakob Keizer<br />
                         Album layout by Christian J. Hidell</p>
                         <div class="return animLink" style="text-align:left;">
-                            <p><a href="#Top">Return to top</a></p>
+                            <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
                         </div>
                 </div>
 
@@ -1224,7 +1232,7 @@
                         <img id="pax-art" src="images/pax/pax-americana-cover-1000.png">
                     </a>
 
-                    <ul>
+                    <ul class="art-link-x">
                         <li><a href="javascript:;" id="paxArtFront">Front Cover</a></li>
                         |
                         <li><a href="javascript:;" id="paxArtInsertL">Left Insert</a></li>
@@ -1406,7 +1414,7 @@
                         Cover art taken from <a href="images/visitor/saint-jerome-writing.jpg" target="_blank"><em>Saint Jerome Writing</em></a> by Caravaggio</p>
     
                         <div class="return animLink" style="text-align:left;">
-                            <p><a href="#Top">Return to top</a></p>
+                            <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
                         </div>
                 </div>
 
@@ -1414,7 +1422,7 @@
                     <a href="images/visitor/the-visitor-cover-1000.png" id="tv-link" target="_blank">
                         <img id="tv-art" src="images/visitor/the-visitor-cover-1000.png">
                     </a>
-                    <ul>
+                    <ul class="art-link-x">
                         <li><a href="javascript:;" id="tvArtFront">Front Cover</a></li>
                         |
                         <li><a href="javascript:;" id="tvArtInsert">Insert</a></li>
@@ -1548,7 +1556,7 @@
                         Album art & layout by Christian J. Hidell<br /></p>
 
                         <div class="return animLink" style="text-align:left;">
-                            <p><a href="#Top">Return to top</a></p>
+                            <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
                         </div>
                 </div>
 
@@ -1557,7 +1565,7 @@
                         <img src="images/bfp/beach-front-cover-1000.png">
                     </a>
 
-                    <ul>
+                    <ul class="art-link-x">
                         <li>Digital only - there ain't no other art!</li>
                     </ul>
                 </div>
@@ -1689,7 +1697,7 @@
                         Album art & layout by NODRA<br /></p>
 
                         <div class="return animLink" style="text-align:left;">
-                            <p><a href="#Top">Return to top</a></p>
+                            <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
                         </div>
                 </div>
 
@@ -1698,7 +1706,7 @@
                         <img id="wsop-art" src="images/wsop/warm-strokes-cover-1000.png">
                     </a>
 
-                    <ul>
+                    <ul class="art-link-x">
                         <li><a href="javascript:;" id="wsopArtFront">Front Cover</a></li>
                         |
                         <li><a href="javascript:;" id="wsopArtBack">Back Cover</a></li>

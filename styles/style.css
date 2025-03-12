@@ -261,18 +261,6 @@ a {
   text-align: center;
 }
 
-  .postItemTwo ul {
-    list-style-type: none;
-    font-size: 12px;
-    text-align: center;
-    padding-left: 0;
-  }
-
-  .postItemTwo li {
-    padding: 5px 10px;
-    display: inline-block;
-  }
-
 .small {
   font-size: .7em;
 }
@@ -415,6 +403,31 @@ a {
 .personnel {
   font-size:1.1em; font-weight:bold;
 }
+
+.art-link-x {
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  padding-left: 0;
+  margin: 1px;
+}
+
+  .art-link-x li {
+    padding: 5px 0px;
+    display: inline-block;
+  }
+
+.art-link-y {
+  list-style-type: none;
+  font-size: 12px;
+  text-align: center;
+  padding-left: 0;
+  margin: 1px;
+}
+
+  .art-link-y li {
+    padding: 3px;
+  }
 
 .buy-button {
   color: var(--offwhite) !important;
