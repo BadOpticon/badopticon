@@ -733,6 +733,10 @@ text-align: center;
 |                        SHOWS                        |
 \*===================================================*/
 
+  .shows>.post a:hover {
+    color: var(--salmon) !important;
+  }
+
 /* SHOWS MEDIA QUERIES */
 
 @media screen and (max-width: 996px) {
