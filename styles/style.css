@@ -450,7 +450,7 @@ a {
 
 @media screen and (max-width: 996px) {
   .index {
-    width: 100%;
+    width: 95%;
     background-color: transparent;
     border: none;
   }
@@ -458,6 +458,11 @@ a {
   .index-link {
     justify-content: center;
   }
+
+    .index-link h2,
+    .index-link h3 {
+      text-shadow: 1px 3px 1px var(--red);
+    }
 }
 
 /*====================================================\
