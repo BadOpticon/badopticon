@@ -1,6 +1,6 @@
 /*====================================================\
 |                    ALBUM NAV                        |
-\*===================================================*/ 
+\*===================================================*/
 
 function jump(h){
     var top = document.getElementById(h).offsetTop;
@@ -9,7 +9,7 @@ function jump(h){
 
 /*====================================================\
 |                   LYRICS LINKS                      |
-\*===================================================*/ 
+\*===================================================*/
 
 /* The Bounded World */
 
@@ -284,7 +284,7 @@ function jump(h){
 
 /*====================================================\
 |                     ALBUM ART                       |
-\*===================================================*/ 
+\*===================================================*/
 
 /* The Bounded World */
 
@@ -302,7 +302,7 @@ const swanArt = document.getElementById("swanSingleArt");
 tbwArtFront.addEventListener("click", function() {
     tbwArt.src = "images/tbw/the-bounded-world-cover-1000.png";
     tbwLink.href = "images/tbw/the-bounded-world-cover-1000.png";
-    });                        
+    });
 
 tbwArtInsertL.addEventListener("click", function() {
     tbwArt.src = "images/tbw/the-bounded-world-insert-left-1000.png";
