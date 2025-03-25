@@ -104,10 +104,6 @@ a {
 /* HTML MEDIA QUERIES */
 
 @media screen and (max-width: 996px) {
-  body {
-    background-size: cover;
-  }
-
   main {
     padding: 0;
   }
@@ -482,6 +478,7 @@ a {
 @media screen and (max-width: 996px) {
   .news {
     max-width: 100%;
+    margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
   }
@@ -791,3 +788,11 @@ footer {
     .footer-nav a:active {
       color: var(--yellow);
     }
+
+/* FOOTER MEDIA QUERIES */
+
+  @media screen and (max-width: 996px) {
+    footer {
+      border-top: none;
+    }
+  }
