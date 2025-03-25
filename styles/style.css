@@ -447,14 +447,16 @@ a {
 
 /* INDEX MEDIA QUERIES */
 
-.index {
-  width: 95%;
-  background-color: transparent;
-  border: none;
-}
+@media screen and (max-width: 996px) {
+  .index {
+    width: 95%;
+    background-color: transparent;
+    border: none;
+  }
 
-.index-link {
-  justify-content: center;
+  .index-link {
+    justify-content: center;
+  }
 }
 
 /*====================================================\
