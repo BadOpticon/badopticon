@@ -18,23 +18,23 @@
 <body>
 
     <nav>
-        <div class="container-fluid header">
+        <div class="container-fluid navigator">
             <div class="row d-flex" id="Top">
-                <div class="col-lg-6 htItem">
+                <div class="col-lg-6 nav-title">
                             <h1><a href="index.html">Bad Optics</a></h1>
-                            <h4 id="subhead">post-structuralist solutions for a Bounded World</h4>
-                            <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                            <h4 id="tagline">post-structuralist solutions for a Bounded World</h4>
+                            <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
                                 <i class="bi bi-list"></i>
                             </a>
                 </div>
-                    
-                <div class="col-lg-6 headNav" id="headNav">
+
+                <div class="col-lg-6 nav-link" id="nav-link">
                     <ul>
-                        <li class="animLink"><a href="news.html">News</a></li>
-                        <li class="animLink"><a href="music.html">Music</a></li>
-                        <li class="animLink"><a href="videos.html">Videos</a></li>
-                        <li class="animLink"><a href="shows.html">Shows</a></li>
-                        <li class="animLink"><a href="epk.html">EPK</a></li>
+                        <li class="link-animation"><a href="news.html">News</a></li>
+                        <li class="link-animation"><a href="music.html">Music</a></li>
+                        <li class="link-animation"><a href="videos.html">Videos</a></li>
+                        <li class="link-animation"><a href="shows.html">Shows</a></li>
+                        <li class="link-animation"><a href="epk.html">EPK</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,33 +42,31 @@
     </nav>
 
  <main>
-    <div class="container-fluid topTitle">
+    <div class="container-fluid header">
         <h1>Shows</h1>
     </div>
 
-    <div class="container-fluid">
-        <div class="row postHead">
-            <h2>What's Next?!</h2>
-        </div>
+    <div class="container-fluid post-title">
+        <h2>What's Next?!</h2>
+    </div>
 
+    <div class="container shows">
         <div class="row post">
-            <div class="postItemOne">
-                <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
-                <a class="bit-widget-initializer" data-artist-name="Bad Optics" data-display-local-dates="true"
-                    data-display-past-dates="true" data-auto-style="false" data-text-color="#000000" data-link-color="#a30a02"
-                    data-background-color="rgba(199, 174, 173, 1)" data-display-limit="15" data-display-start-time="true"
-                    data-link-text-color="#edde05" data-display-lineup="true" data-display-play-my-city="true"
-                    data-separator-color="rgba(124,124,124,0.25)">
-                </a>
-            </div>
+            <script charset="utf-8" src="https://widget.bandsintown.com/main.min.js"></script>
+            <a class="bit-widget-initializer" data-artist-name="Bad Optics" data-display-local-dates="true"
+                data-display-past-dates="true" data-auto-style="false" data-text-color="var(--white)" data-link-color="var(--white)"
+                data-background-color="var(--rust)" data-display-limit="15" data-display-start-time="true"
+                data-link-text-color="var(--salmon)" data-display-lineup="true" data-display-play-my-city="true"
+                data-separator-color="var(--redbrown)">
+            </a>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row postHead">
-            <h2>Set List Opticon</h2>
-        </div>
+    <div class="container-fluid post-title">
+        <h2>Set List Opticon</h2>
+    </div>
 
+    <div class="container shows">
         <div class="row post">
             <h5 style="text-align:center;">Set list archive coming soon!</h5>
         </div>
@@ -76,7 +74,7 @@
  </main>
 
  <footer>
-    <div class="row footNav">
+    <div class="row footer-nav">
         <ul>
             <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
             <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>

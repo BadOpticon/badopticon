@@ -18,23 +18,23 @@
 
 <body>
     <nav>
-        <div class="container-fluid header">
+        <div class="container-fluid navigator">
             <div class="row d-flex" id="Top">
-                <div class="col-lg-6 htItem">
+                <div class="col-lg-6 nav-title">
                             <h1><a href="index.html">Bad Optics</a></h1>
-                            <h4 id="subhead">post-structuralist solutions for a Bounded World</h4>
-                            <a href="javascript:void(0);" class="icon" onclick="navbar()">
+                            <h4 id="tagline">post-structuralist solutions for a Bounded World</h4>
+                            <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
                                 <i class="bi bi-list"></i>
                             </a>
                 </div>
-                    
-                <div class="col-lg-6 headNav" id="headNav">
+
+                <div class="col-lg-6 nav-link" id="nav-link">
                     <ul>
-                        <li class="animLink"><a href="news.html">News</a></li>
-                        <li class="animLink"><a href="music.html">Music</a></li>
-                        <li class="animLink"><a href="videos.html">Videos</a></li>
-                        <li class="animLink"><a href="shows.html">Shows</a></li>
-                        <li class="animLink"><a href="epk.html">EPK</a></li>
+                        <li class="link-animation"><a href="news.html">News</a></li>
+                        <li class="link-animation"><a href="music.html">Music</a></li>
+                        <li class="link-animation"><a href="videos.html">Videos</a></li>
+                        <li class="link-animation"><a href="shows.html">Shows</a></li>
+                        <li class="link-animation"><a href="epk.html">EPK</a></li>
                     </ul>
                 </div>
             </div>
@@ -42,23 +42,29 @@
     </nav>
 
     <main>
-        <div class="container-fluid topTitle">
+        <div class="container-fluid header">
             <h1>Videos</h1>
         </div>
 
-        <div class="container-fluid">
-            <div class="row postHead">
-                    <h3>Music Videos</h3>
-            </div>
+        <div class="container post-title">
+                <h3>Music Videos</h3>
+        </div>
 
-            <div class="row post videos">
-                <div class="col-lg-8 postItemOne">
-                    <video controls width="100%">
-                        <source src="video/falling.mp4" type="video/mp4" />
-                    </video>
+        <div class="container videos">
+            <div class="row post">
+                <div class="col-lg-8 post-split-left">
+                    <div class="youtube">
+                        <iframe width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Kkw5KPFZvaU"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                    </div>
                 </div>
 
-                <div class="col-md postItemTwo">
+                <div class="col-md post-split-right">
                     <h3>Falling from High Places</h3>
                     <h5>The Facts</h5>
                     <p>Starring: Bad Optics</p>
@@ -70,8 +76,8 @@
                 </div>
             </div>
 
-            <div class="row post videos bottom">
-                <div class="col-lg-8 postItemOne">
+            <div class="row post">
+                <div class="col-lg-8 post-split-left">
                     <div class="youtube">
                         <iframe width="560"
                         height="315"
@@ -83,7 +89,7 @@
                     </div>
                 </div>
 
-                <div class="col-md postItemTwo">
+                <div class="col-md post-split-right">
                     <h3>Turnscrews</h3>
                     <h5>The Facts</h5>
                     <p>Starring: Caleb Beal, Bad Optics</p>
@@ -95,57 +101,58 @@
                     Additional shots done in the practice space in November 2020</p>
                 </div>
             </div>
+        </div>
 
-        <div class="row postHead">
+        <div class="container-fluid post-title">
             <h3>Live Stuff</h3>
         </div>
 
-        <div class="row post videos">
-            <div class="col-lg-8 postItemOne">
-                <div class="youtube">
-                    <iframe width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/QcUkdU9C4vo"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+        <div class="container videos">
+            <div class="row post">
+                <div class="col-lg-8 post-split-left">
+                    <div class="youtube">
+                        <iframe width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/QcUkdU9C4vo"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md post-split-right">
+                    <h3>Art Is for Everyone (Live at the Vera Project 02.22.25)</h3>
+                    <h5>The Facts</h5>
+                    <p>Shot by Jimmy Humphryes</p>
                 </div>
             </div>
 
-            <div class="col-md postItemTwo">
-                <h3>Art Is for Everyone (Live at the Vera Project 02.22.25)</h3>
-                <h5>The Facts</h5>
-                <p>Shot by Jimmy Humphryes</p>
-            </div>
-        </div>
+            <div class="row post">
+                <div class="col-lg-8 post-split-left">
+                    <div class="youtube">
+                        <iframe width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/8Gvs81hcpg4"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen></iframe>
+                    </div>
+                </div>
 
-        <div class="row post videos bottom">
-            <div class="col-lg-8 postItemOne">
-                <div class="youtube">
-                    <iframe width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/8Gvs81hcpg4"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen></iframe>
+                <div class="col-md post-split-right">
+                    <h3>Band in Seattle</h3>
+                    <h5>The Facts</h5>
+                    <p>Originally aired on February 15th, 2019<br />
+                    View the full playlist <a href="https://www.youtube.com/playlist?list=PLm0nC9ToS0UrndhvKSbGegIwjdjCRgD0L" target="_blank">HERE</a></p>
                 </div>
             </div>
-
-            <div class="col-md postItemTwo">
-                <h3>Band in Seattle</h3>
-                <h5>The Facts</h5>
-                <p>Originally aired on February 15th, 2019<br />
-                View the full playlist <a href="https://www.youtube.com/playlist?list=PLm0nC9ToS0UrndhvKSbGegIwjdjCRgD0L" target="_blank">HERE</a></p>
-            </div>
-        </div>
-
         </div>
     </main>
 
     <footer>
-        <div class="row footNav">
+        <div class="row footer-nav">
             <ul>
                 <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
                 <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
@@ -154,15 +161,15 @@
                 <li><a href="https://www.patreon.com/badoptics" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
             </ul>
         </div>
-    
+
         <p class="small">Copyright 2025 Bad Optics, LLC</p>
-     </footer>
-    
+    </footer>
+
     </body>
-    
-     <!-- scripts -->
-     <script src="scripts/main.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-     <script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
-    
-    </html>
+
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
+
+</html>

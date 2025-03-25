@@ -2,12 +2,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-    --offwhite: rgba(232, 231, 227, 1);
+    --white: rgba(255, 255, 255, 1);
+    --black: rgba(0, 0, 0, 1);
+    --offwhite: rgba(231, 221, 215, 1);
     --red: rgba(163, 10, 2, 1);
-    --salmon: rgba(251, 99, 88, 1);
     --yellow: rgba(237, 222, 5, 1);
     --pink: rgba(199, 174, 173, 1);
-    --redbrown: rgba(80, 54, 53, 1);
+    --redbrown: rgba(96, 32, 37, 1);
+    --greywhite: rgba(216, 216, 215, 1);
+
+    --rust: rgba(130, 66, 60, 1);
+    --salmon: rgba(185, 129, 116, 1);
+    --darkgrey: rgba(34, 34, 34, 1);
+    --dgtransparent: rgba(34, 34, 34, .6);
+    --grey: rgba(106, 106, 106, 1);
+    --greytransparent: rgba(106, 106, 106, .5);
+    --lightgrey: rgba(210, 209, 209, 1);
+    --lgtransparent: rgba(210, 209, 209, .4);
 }
 
 html {
@@ -15,11 +26,8 @@ html {
 }
 
 body {
-    background-color: var(--pink);
-    background-image: url("../images/big-pink.png");
-    background-size: auto;
-    background-position: center;
-    color: black;
+
+    color: var(--white);
     font-family: "Libre Franklin";
     font-weight: 600;
     height: 100%;
@@ -27,9 +35,15 @@ body {
 
 main {
   min-height: 100%;
-  position: relative;
-  border-left: 6px solid black;
-  border-right: 6px solid black;
+  padding-top: .5em;
+  padding-bottom: 1em;
+  background-color: var(--lightgrey);
+  background-image: url("../images/quadrant-bg.png");
+  box-shadow: inset 0 0 0 2000px rgba(34, 34, 34, .6);
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,11 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
   h1, h2, h3, h4 {
-    color: var(--offwhite);
-  }
-
-  h2, h3, h4 {
-    text-shadow: 1px 3px 1px var(--red);
+    color: var(--white);
   }
 
 h1 {
@@ -75,54 +85,63 @@ p {
 }
 
 a {
-    color: var(--red);
+    color: var(--white);
     text-decoration: none;
 }
 
   a:hover {
-    color: var(--yellow);
-    text-decoration: none;
+    color: var(--yellow) !important;
   }
 
   a:active {
     color: var(--yellow);
-    text-decoration: none;
   }
 
   a:visited {
-    color: var(--red);
-    text-decoration: none;
+    color: var(--white);
   }
 
-/*====================================================\
-|                  HEADER / NAVBAR                    |
-\*===================================================*/ 
+/* HTML MEDIA QUERIES */
 
-.header {
-  background-color: black;
-  overflow: hidden;
+@media screen and (max-width: 996px) {
+  body {
+    background-size: cover;
+  }
+
+  main {
+    padding: 0;
+  }
 }
 
-  .header h1 {
+/*====================================================\
+|                       NAVBAR                        |
+\*===================================================*/
+
+.navigator {
+  background-color: var(--rust);
+  overflow: hidden;
+  border-bottom: 2px solid var(--black);
+}
+
+  .navigator h1 {
     margin-bottom: 0;
   }
 
-#subhead {
+#tagline {
   font-size: 0.7em;
   margin-left: 1px;
 }
 
-.htItem {
+.nav-title {
   display: flex;
   align-items: flex-end;
 }
 
-  .htItem a {
-    color: var(--offwhite);
-    text-decoration: none;
+  .nav-title a:hover {
+    color: var(--white) !important;
   }
 
-.icon {
+.toggle-icon {
   font-size: 1.8em;
   display: none;
   position: absolute;
@@ -130,87 +149,132 @@ a {
   top: 7px;
 }
 
-.headNav {
+.nav-link {
   display: flex;
   align-self: flex-end;
   justify-content: end;
 }
 
-  .headNav ul {
+  .nav-link ul {
     font-size: 18px;
     list-style-type: none;
     margin-bottom: 0;
     padding-left: 0;
   }
 
-  .headNav li {
+  .nav-link li {
     padding: 5px 20px 0 20px;
     display: inline-block;
   }
 
-  /* link animation */
-    .animLink {
-      font-style: italic;
-      text-transform: uppercase;
-      margin-bottom: 5px;
+  /* NAVBAR MEDIA QUERIES */
+
+@media screen and (max-width: 996px) {
+  .navigator {
+    border: none;
+  }
+
+  #tagline {
+    display: none;
+  }
+
+  .toggle-icon a {
+    color: var(--white)
+  }
+
+    .toggle-icon a:hover {
+      color: var(--white)
     }
 
-    @media screen and (min-width: 992px) {
-      .animLink a {
-        background-image: linear-gradient(
-          to right,
-          var(--yellow),
-          var(--yellow) 50%,
-          var(--red) 50%
-        );
-        background-size: 200% 100%;
-        background-position: -100%;
-        display: inline-block;
-        padding: 0;
-        position: relative;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
+    .toggle-icon a:active {
+      color: var(--white)
+    }
+
+    .nav-link ul {
+      display: inline;
+      max-height: 0;
+      overflow: hidden;
+      padding-left: 5px;
+      padding-right: 5px;
+      color: var(--red);
+      text-align: center;
+      transition: max-height 500ms, padding 800ms;
+    }
+
+      .nav-link.responsive ul {
+        max-height: 150px;
+        padding: 7px 5px;
       }
 
-      .animLink a:before {
-        content: '';
-        background: var(--yellow);
+      .nav-link li {
+        text-align: center;
+      }
+
+    .nav-link a:hover {
+      color: var(--yellow);
+    }
+
+    .nav-link.responsive {
+      position: relative;
+    }
+
+      .nav-title a.toggle-icon {
         display: block;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        transition: all 0.3s ease-in-out;
+        right: 15px;
       }
+}
 
-      .animLink a:hover {
-        background-position: 0;
-      }
+@media screen and (max-width: 358px) {
+  .navigator h1 {
+    font-size: 2em;
+  }
 
-      .animLink a:hover::before {
-        width: 100%;
-      }
-    }
+  .toggle-icon {
+    font-size: 1.5em;
+    right: 1px;
+    top: 1px;
+  }
+}
 
 /*====================================================\
 |                        MAIN                         |
-\*===================================================*/ 
+\*===================================================*/
 
-.topTitle {
-  padding: 5px;
+.header {
+  background-color: var(--lgtransparent);
+  margin: .5em auto;
+  border-top: 2px solid var(--black);
+  border-bottom: 2px solid var(--black);
 }
 
-  .topTitle h1 {
+  .header h1 {
     margin: 30px auto;
     text-align: center;
   }
 
+.post-title {
+  max-width: 95%;
+  margin: .5em auto;
+  padding: 1em;
+  background-color: var(--greytransparent);
+  border: 2px solid var(--black);
+}
+
+  .post-title h1,
+  .post-title h2,
+  .post-title h3 {
+    color: var(--white);
+    margin-top: 8x;
+    margin-bottom: 0;
+    text-align: center;
+    text-shadow: 1px 3px 1px var(--red);
+  }
+
 .post {
+  background: var(--rust);
+  margin-bottom: .5em;
   padding: 15px 20px;
-  border-bottom: 4px solid black;
-  background: var(--pink);
+  border: 2px solid var(--black);
 }
 
   .post h2,
@@ -228,36 +292,12 @@ a {
     border-bottom: none;
   }
 
-    .post.music h5,
-    .post.videos h5 {
-      text-decoration: underline;
-      margin-bottom: 0;
-    }
-
-.postHead {
-  padding: 10px 20px;
-  background-color: black;
-}
-
-  .postHead h1,
-  .postHead h2,
-  .postHead h3 {
-    color: var(--red);
-    text-shadow: none;
-    margin-top: 8x;
+  .post-subsection {
+    text-decoration: underline;
     margin-bottom: 0;
   }
 
-.postItemOne a {
-  color: black;
-}
-
-  .postItemOne a:hover {
-    color: var(--offwhite);
-    text-decoration: none;
-  }
-
-.postItemTwo {
+.post-split-right {
   text-align: center;
 }
 
@@ -270,89 +310,201 @@ a {
   margin-top: 40px;
 }
 
+/* LINK ANIMATION */
+
+.link-animation {
+  font-style: italic;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 996px) {
+  .link-animation a {
+    background-image: linear-gradient(
+      to right,
+      var(--yellow),
+      var(--yellow) 50%,
+      var(--white) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link-animation a:before {
+    content: '';
+    background: var(--yellow);
+    display: block;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .link-animation a:hover {
+    background-position: 0;
+  }
+
+  .link-animation a:hover::before {
+    width: 100%;
+  }
+}
+
+
+/* MAIN MEDIA QUERIES */
+
+@media screen and (max-width: 996px) {
+  #Top {
+    flex-direction: column;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .post-title {
+    max-width: 100%;
+    margin: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+  }
+
+  .post {
+    padding-left: .2em;
+    padding-right: .2em;
+    margin-bottom: 0;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
+
+  .return a {
+    color: var(--white);
+  }
+
+    .return a:hover {
+    color: var(--yellow)
+    }
+}
+
 /*====================================================\
 |                       INDEX                         |
-\*===================================================*/ 
+\*===================================================*/
+
+.video-banner {
+  width: 100%;
+  position: relative;
+}
+
+  #IndexVideo {
+    position: fixed;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
 
 .index {
-    display: flex;
-    top: 5px;
-    justify-content: center;
-    margin: auto;
+  position: relative;
+  background-color: var(--rust);
+  margin: .5em;
+  border: 4px solid black;
+  width: 28%;
 }
 
-.indexImg {
-  padding: 0;
+.index-link {
+  display: flex;
+  margin: 1em 0;
+  padding: 1em;
 }
 
-  .indexImg img {
-      width: 100%;
-      border: 2px solid black;
+  .index-link img {
+    display: inline-block;
+    max-width: 100px;
+    width: 100%;
+    margin-right: 1em;
   }
+
+  .index-link h2,
+  .index-link h3 {
+    display: inline-block;
+  }
+
+  .index-link a {
+    color: var(--white);
+  }
+
+    .index-link a:hover {
+      color: var(--yellow) !important;
+    }
+
+/* INDEX MEDIA QUERIES */
+
+.index {
+  width: 95%;
+  background-color: transparent;
+  border: none;
+}
+
+.index-link {
+  justify-content: center;
+}
+
+/*====================================================\
+|                         NEWS                        |
+\*===================================================*/
+
+.news {
+  margin-bottom: 10px;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+  .news h3,
+  .news h4,
+  .news h5 {
+    text-shadow: none;
+    text-decoration: underline;
+  }
+
+/* NEWS MEDIA QUERIES */
+@media screen and (max-width: 996px) {
+  .news {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+    .news>.post-title,
+    .news>.post {
+      margin-left: 0;
+      margin-right: 0;
+    }
+}
 
 /*====================================================\
 |                       MUSIC                         |
-\*===================================================*/ 
+\*===================================================*/
 
-.music h6 {
-  margin-top: 20px;
-  margin-bottom: 30px;
+.music {
+  max-width: 90%;
+  margin: 1em auto;
 }
 
-.musicNav {
-  padding: 10px 30px;
-  background-color: var(--redbrown);
-}
-
-  .musicNav img {
-    max-width: 150px;
-    width: 100%;
-  }
-
-.musicNavHead {
-  display: flex;
-  width: 100%;
-}
-
-.musicNavItem {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-}
-
-  .musicNavCont {
-    position: relative;
-    display: inline-block;
-    margin-right: 8%;
-  }
-
-  .musicNavOverlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #323232;
-  }
-
-  .musicNavCont:hover .musicNavOverlay {
-    opacity: .9;
-  }
-
-  .musicNavText {
-    color: var(--offwhite);
-    text-shadow: 1px 3px 1px var(--red);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  .music>.post h6 {
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 
 .tracklist>p {
@@ -361,39 +513,6 @@ a {
 
 .tracklist a {
   font-size: .75em;
-  color: var(--red) !important;
-}
-
-  .tracklist a:hover {
-    color: var(--yellow) !important;
-  }
-
-.lyrics-overlay {
-    background-color: var(--offwhite);
-    max-height: 0;
-    width: 30rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
-    overflow: hidden;
-    transition: max-height ease-in-out 1000ms, width ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
-}
-
-   .lyrics-overlay.active {
-    max-height: 1500px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-   }
-
-.lyrics-chorus {
-  text-align: right;
-}
-
-.lyrics-center {
-  text-align: center;
 }
 
 .writing-credits {
@@ -402,6 +521,10 @@ a {
 
 .personnel {
   font-size:1.1em; font-weight:bold;
+}
+
+.album-art {
+  border: 1px solid var(--black);
 }
 
 .art-link-x {
@@ -428,9 +551,10 @@ a {
   }
 
 .buy-button {
-  color: var(--offwhite) !important;
+  color: var(--white) !important;
   font-size: 1.1em;
   text-transform: uppercase;
+  text-wrap: nowrap;
   background-color: var(--redbrown);
   border: 2px solid black;
   border-radius: 10px;
@@ -439,17 +563,146 @@ a {
 }
 
   .buy-button:hover {
-    color: var(--red) !important;
-    background-color: var(--pink);
+    color: var(--yellow) !important;
+    background-color: var(--rust);
   }
+
+/* MUSIC NAV */
+
+.music-nav {
+  max-width: 97%;
+  margin: auto;
+  padding: 10px 30px;
+  background-color: var(--dgtransparent);
+  border: 2px solid var(--black);
+}
+
+  .music-nav img {
+    max-width: 150px;
+    width: 100%;
+  }
+
+.music-navHead {
+  display: flex;
+  width: 100%;
+}
+
+.music-navItem {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+  .music-navCont {
+    position: relative;
+    display: inline-block;
+    margin-right: 8%;
+  }
+
+  .music-navOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #323232;
+  }
+
+  .music-navCont:hover .music-navOverlay {
+    opacity: .9;
+  }
+
+  .music-navText {
+    color: var(--white);
+    text-shadow: 1px 3px 1px var(--red);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* LYRICS BOX */
+
+.lyrics-overlay {
+  background-color: var(--darkgrey);
+  max-height: 0;
+  width: 30rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  overflow: hidden;
+  transition: max-height ease-in-out 1000ms, width ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
+}
+
+ .lyrics-overlay.active {
+  max-height: 1500px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+.lyrics-chorus {
+text-align: right;
+}
+
+.lyrics-center {
+text-align: center;
+}
+
+/* MUSIC MEDIA QUERIES */
+
+@media screen and (max-width: 996px) {
+  .music {
+    max-width: 100%;
+    margin: 0;
+    border-left: none !important;
+    border-right: none !important;
+  }
+
+    .music>.post>.post-split-left {
+      order: 2;
+    }
+
+    .music>.post>.post-split-right {
+      order: 1;
+    }
+
+  .lyrics-overlay {
+    width: 100%;
+    transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
+  }
+
+  .music-nav {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+}
 
 /*====================================================\
 |                       VIDEOS                        |
-\*===================================================*/ 
+\*===================================================*/
 
-.videos>.postItemTwo {
-  text-align: left;
+.videos {
+  max-width: 90%;
 }
+
+  .videos .post-split-right {
+    text-align: left;
+  }
+
+    .videos .post-split-right h5 {
+      text-decoration: underline;
+    }
 
 .youtube {
   position: relative;
@@ -459,7 +712,7 @@ a {
   max-width: 1280px;
   margin: 0 auto;
 }
-  
+
   .youtube iframe {
     position: absolute;
     top: 0;
@@ -469,72 +722,57 @@ a {
     border: 0;
   }
 
+@media screen and (max-width: 996px) {
+  .youtube {
+    margin-bottom: 10px;
+  }
+
+  .videos {
+    max-width: 100%;
+  }
+}
+
 /*====================================================\
 |                        SHOWS                        |
-\*===================================================*/ 
+\*===================================================*/
 
-.bit {
-  margin-top: 30px;
-  max-width: 800px;
-  width: 100%;
-  justify-content: center;
-}
+/* SHOWS MEDIA QUERIES */
 
-/*====================================================\
-|                         NEWS                        |
-\*===================================================*/ 
-
-.news {
-  margin-bottom: 10px;
-}
-
-.news>.postHead,
-.news>.post {
-  margin-left: 2em;
-  margin-right: 2em;
-}
-
-  .news>.post {
-    border-top: 4px solid black;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+@media screen and (max-width: 996px) {
+  .shows {
+    max-width: 100%;
   }
-
-  .news>.post h3,
-  .news>.post h4 {
-    color: var(--red);
-    text-shadow: none;
-    text-decoration: underline;
-  }
+}
 
 /*====================================================\
 |                       FOOTER                        |
-\*===================================================*/ 
+\*===================================================*/
 
 footer {
-  background-color: black;
-  color: var(--offwhite);
+  background-color: var(--rust);
+  color: var(--white);
   padding: 5px;
   text-align: center;
+  border-top: 4px solid var(--black);
   position: relative;
   bottom: 0;
   width: 100%;
 }
 
-.footNav {
-  margin: 10px;
+.footer-nav {
+  margin: 0;
 }
 
-  .footNav ul {
+  .footer-nav ul {
     list-style-type: none;
   }
 
-  .footNav li {
+  .footer-nav li {
     display: inline-block;
-    padding: 10px;
+    padding: 10px 10px 0 10px;
   }
 
-  .footNav img {
+  .footer-nav img {
     color: var(--red);
     max-width: 16px;
     width: 100%;
@@ -542,130 +780,14 @@ footer {
     justify-content: center;
   }
 
-    .footNav a:hover {
+  .footer-nav a {
+    color: var(white);
+  }
+
+    .footer-nav a:hover {
       color: var(--yellow);
     }
 
-    .footNav a:active {
+    .footer-nav a:active {
       color: var(--yellow);
     }
-
-/*====================================================\
-|                   MEDIA QUERIES                     |
-\*===================================================*/ 
-
-@media screen and (max-width: 992px) {
-  main {
-    border: none;
-  }
-
-  body {
-    background-size: cover;
-  }
-
-  #subhead {
-    display: none;
-  }
-
-  .icon a {
-    color: var(--offwhite)
-  }
-
-    .icon a:hover {
-      color: var(--offwhite)
-    }
-
-    .icon a:active {
-      color: var(--offwhite)
-    }
-
-    .headNav ul {
-      display: inline;
-      max-height: 0;
-      overflow: hidden;
-      padding-left: 5px;
-      padding-right: 5px;
-      color: var(--red);
-      text-align: center;
-      transition: max-height 500ms, padding 800ms;
-    }
-
-      .headNav.responsive ul {
-        max-height: 150px;
-        padding: 7px 5px;
-      }
-
-      .headnav li {
-        text-align: center;
-      }
-
-    .headNav a:hover {
-      color: var(--yellow);
-    }
-
-    .headNav.responsive {
-      position: relative;
-    }
-
-      .htItem a.icon {
-        display: block;
-        right: 15px;
-    }
-
-  #Top {
-    flex-direction: column;
-  }
-  
-  .musicNav {
-    visibility: hidden;
-    clear: both;
-    display: none;
-  }
-
-    .lyrics-overlay {
-      width: 100%;
-      transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
-  }
-
-  .return a {
-    color: var(--red);
-  }
-
-   .return a:hover {
-    color: var(--yellow)
-   }
-
-  .postHead {
-    text-align: center;
-  }
-
-  .music>.postItemOne {
-    order: 2;
-  }
-
-  .music>.postItemTwo {
-    order: 1;
-  }
-
-  .youtube {
-    margin-bottom: 10px;
-  }
-
-  .news>.postHead,
-  .news>.post {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 358px) {
-  .header h1 {
-    font-size: 2em;
-  }
-
-  .icon {
-    font-size: 1.5em;
-    right: 1px;
-    top: 1px;
-  }
-}
