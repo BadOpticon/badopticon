@@ -244,8 +244,19 @@ function jump(h){
     }
 }
 
-/* 03 */ function toggleDungeon() {
+/* 02 */ function toggleDungeon() {
     var div = document.getElementById("lyricsDungeon");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* Feng Shui for the Wolf Society */
+
+/* 01 */ function toggleFS() {
+    var div = document.getElementById("lyricsFS");
     if (div.className === "lyrics-overlay") {
         div.className = "lyrics-overlay active";
     } else {

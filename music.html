@@ -50,18 +50,90 @@
             <h1>Music</h1>
         </div>
 
-        <div class="music-nav">
+        <div class="music-nav albums">
             <div class="music-navHead">
                 <div class="music-navItem">
-                    <h3>Full Lengths</h3>
-                </div>
-
-                <div class="music-navItem">
-                    <h3>EPs & Singles</h3>
+                    <h4>Full Lengths</h4>
                 </div>
             </div>
 
             <div class="music-navHead">
+                <div class="music-navItem">
+                    <div class="music-navCont">
+                        <a onclick="jump('TBW')" href="javascript:;">
+                        <img src="images/tbw/the-bounded-world-cover-icon.webp"
+                        alt="A navigation icon for The Bounded World" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText">The Bounded World</h5>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="music-navCont">
+                        <a onclick="jump('PA')" href="javascript:;">
+                        <img src="images/pax/pax-americana-cover-icon.webp"
+                        alt="A navigation icon for Pax Americana" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText">Pax Americana</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="music-nav eps">
+            <div class="music-navHead">
+                <div class="music-navItem">
+                    <h4>EPs & Singles</h4>
+                </div>
+            </div>
+
+            <div class="music-navHead">
+                <div class="music-navItem">
+                    <div class="music-navCont">
+                        <a onclick="jump('TV')" href="javascript:;">
+                        <img src="images/visitor/the-visitor-cover-icon.webp"
+                        alt="A navigation icon for The Visitor" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText">The Visitor</h5>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="music-navCont">
+                        <a onclick="jump('BFP')" href="javascript:;">
+                        <img src="images/bfp/beach-front-cover-icon.webp"
+                        alt="A navigation icon for Beach Front Property / Dungeon Crawler" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText" style="font-size:.9em;">Beach Front Property - Dungeon Crawler</h5>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="music-navCont">
+                        <a onclick="jump('FS')" href="javascript:;">
+                        <img src="images/feng/feng-shui-cover-icon.webp"
+                        alt="A navigation icon for Beach Front Property / Dungeon Crawler" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText" style="font-size:.9em;">Feng Shui for the Wolf Society</h5>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="music-navCont">
+                        <a onclick="jump('WSoP')" href="javascript:;">
+                        <img src="images/wsop/warm-strokes-cover-icon.webp"
+                        alt="A navigation icon for Warm Strokes of Pragmatism" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText">Warm Strokes of Pragmatism</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="music-navHead">
                 <div class="music-navItem">
                     <div class="music-navCont">
                         <a onclick="jump('TBW')" href="javascript:;">
@@ -106,6 +178,16 @@
                     </div>
 
                     <div class="music-navCont">
+                        <a onclick="jump('FS')" href="javascript:;">
+                        <img src="images/feng/feng-shui-cover-icon.webp"
+                        alt="A navigation icon for Beach Front Property / Dungeon Crawler" />
+                        <div class="music-navOverlay">
+                            <h5 class="music-navText" style="font-size:.9em;">Feng Shui for the Wolf Society</h5>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="music-navCont">
                         <a onclick="jump('WSoP')" href="javascript:;">
                         <img src="images/wsop/warm-strokes-cover-icon.webp"
                         alt="A navigation icon for Warm Strokes of Pragmatism" />
@@ -115,7 +197,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <div class="container post-title">
@@ -1586,6 +1668,97 @@
                     <a href="images/bfp/beach-front-cover.png">
                         <img class="album-art" src="images/bfp/beach-front-cover-500.webp"
                         alt="Artwork for the Beach Front Property / Dungeon Crawler single by Bad Optics" />
+                    </a>
+
+                    <ul class="art-link-x">
+                        <li>Digital only - there ain't no other art!</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row post" id="FS">
+                <h3>Feng Shui for the Wolf Society (2018)</h3>
+
+                <div class="col-lg post-split-left">
+                    <!-- <h6>
+                        <a class="buy-button"
+                        href="https://badoptics.bandcamp.com/album/feng-shui-for-the-wolf-society-single">
+                            Buy & listen on Bandcamp <i class="fa-brands fa-bandcamp"></i>
+                        </a>
+                    </h6> -->
+
+                    <h5 class="post-subsection">Release Date</h5>
+                    <p>June 1st, 2018</p>
+
+                    <h5 class="post-subsection">Track List</h5>
+
+                    <div class="tracklist">
+                        <p>01. Feng Shui for the Wolf Society <a onclick="toggleFS()" href="javascript:;">(Lyrics)</a></p>
+
+                        <div class="lyrics-overlay" id="lyricsFS">
+                            <p>Well you can move your little objects around<br />
+                                You know the future's gonna still hunt you down<br />
+                                Yeah, you can organize your mind with a plot<br />
+                                Just to become something you know you is not</p>
+
+                            <p class="lyrics-chorus">Well it becomes so easy, it feels so free<br />
+                                When you obsess f-feng shui for the wolf society<br />
+                                F-f-f-feng shui for the wolf society<br />
+                                F-f-f-feng shui for the wolf society!</p>
+
+                            <p class="lyrics-center">SUBDIVISION<br />
+                                WON'T SURVIVE</p>
+
+                            <p>Underneath you feel something that you try to conceal<br />
+                                Oh once again, locked yourself in the vestibule, my friend<br />
+                                But it's okay!<br />
+                                Just keep your mind on the...feng shui!<br />
+                                Fuh-fuh-fuh-feng shui!<br />
+                                You try to do people right but they don't stay!<br />
+                                Feng shui so the wolves abide…<br />
+                                I know there's something in that tiny brain you're trying to hide</p>
+
+                            <p class="lyrics-center">SUBTLE VISION<br />
+                                SPACE AND TIME</p>
+
+                            <p>Oh honey face!<br />
+                                I looked above!<br />
+                                I saw the oligarchs have got a plan for you and me, my love<br />
+                                They're coming for me<br />
+                                They want it for free</p>
+
+                            <p class="lyrics-chorus">It's easier than it seems to be a critical fake<br />
+                                I circulate my mistakes<br />
+                                Hang my regrets at the Tate<br />
+                                I'm coming round with some suggestions to make<br />
+                                It isn't empathy or sympathy, my darling<br />
+                                What you're lacking is taste</p>
+                        </div>
+                    </div>
+
+                    <p class="writing-credits small">Music and lyrics by Ryan Alexander</p>
+
+                    <h5 class="post-subsection">Personnel</h5>
+                    <p>Ryan Alexander - lead vocals, guitar, synthesizer<br />
+                    Christian J. Hidell - guitar<br />
+                    Stephanie Jones - bass<br />
+                    Joshua Ihler - drums</p>
+
+                    <h5 class="post-subsection">Technical</h5>
+                    <p>Recorded at The Opticon in 2018<br />
+                        Produced, engineered, & mixed by Bad Optics<br />
+                        Mastered by Chris Hanzsek at <a href="http://hanzsekaudio.com/" target="_blank">Hanzsek Audio</a><br />
+                        Album art & layout by NODRA<br /></p>
+
+                        <div class="return link-animation" style="text-align:left;">
+                            <p><a onclick="jump('Top')" href="javascript:;">Return to top</a></p>
+                        </div>
+                </div>
+
+                <div class="col-md-4 post-split-right">
+                    <a href="images/feng/feng-shui-cover.jpg">
+                        <img class="album-art" src="images/feng/feng-shui-cover-500.webp"
+                        alt="Artwork for Feng Shui for the Wolf Society single by Bad Optics" />
                     </a>
 
                     <ul class="art-link-x">

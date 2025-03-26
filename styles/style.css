@@ -105,7 +105,7 @@ a {
 
 @media screen and (max-width: 996px) {
   main {
-    padding: 0;
+    padding: 0 0 5em 0;
   }
 }
 
@@ -577,17 +577,40 @@ a {
 /* MUSIC NAV */
 
 .music-nav {
-  max-width: 97%;
-  margin: auto;
-  padding: 10px 30px;
+  max-width: 55%;
+  margin-bottom: 1em;
+  padding: 10px .5em;
   background-color: var(--dgtransparent);
   border: 2px solid var(--black);
 }
 
   .music-nav img {
-    max-width: 150px;
+    max-width: 160px;
     width: 100%;
   }
+
+  .music-nav h3,
+  .music-nav h4 {
+    text-shadow: 1px 3px 1px var(--red);
+  }
+
+  .music-nav.albums {
+    margin-left: 1em;
+    margin-right: auto;
+  }
+
+  .music-nav.eps {
+    margin-left: auto;
+    margin-right: 1em;
+  }
+
+    .music-nav.eps img {
+      max-width: 150px;
+    }
+
+    .eps h4 {
+      margin-right: 2%;
+    }
 
 .music-navHead {
   display: flex;
@@ -597,7 +620,7 @@ a {
 .music-navItem {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 100%;
 }
 
   .music-navCont {
@@ -605,6 +628,11 @@ a {
     display: inline-block;
     margin-right: 8%;
   }
+
+    .eps .music-navItem {
+      justify-content: space-between;
+      flex-wrap: nowrap;
+    }
 
   .music-navOverlay {
     position: absolute;
@@ -625,7 +653,6 @@ a {
 
   .music-navText {
     color: var(--white);
-    text-shadow: 1px 3px 1px var(--red);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -807,6 +834,6 @@ footer {
 
   @media screen and (max-width: 996px) {
     footer {
-      border-top: none;
+      border-top: 2px solid var(--black);
     }
   }
