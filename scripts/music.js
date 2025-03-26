@@ -347,6 +347,7 @@ const paxArtFront = document.getElementById("paxArtFront");
 const paxArtInsertL = document.getElementById("paxArtInsertL");
 const paxArtInsertR = document.getElementById("paxArtInsertR");
 const paxArtBack = document.getElementById("paxArtBack");
+const paxArtDisc = document.getElementById("paxArtDisc");
 
 paxArtFront.addEventListener("click", function() {
     paxArt.src = "images/pax/pax-americana-cover-500.webp";
@@ -366,6 +367,11 @@ paxArtInsertR.addEventListener("click", function() {
 paxArtBack.addEventListener("click", function() {
     paxArt.src = "images/pax/pax-americana-back-cover-500.webp";
     paxLink.href = "images/pax/pax-americana-back-cover.jpg";
+    });
+
+paxArtDisc.addEventListener("click", function() {
+    paxArt.src = "images/pax/pax-americana-disc-art-500.webp";
+    paxLink.href = "images/pax/pax-americana-disc-art.png";
     });
 
 /* The Visitor */
