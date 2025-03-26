@@ -300,43 +300,43 @@ const tbwSingleArt = document.getElementById("tbwSingleArt");
 const swanArt = document.getElementById("swanSingleArt");
 
 tbwArtFront.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-cover-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-cover-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-cover-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-cover.png";
     });
 
 tbwArtInsertL.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-insert-left-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-insert-left-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-insert-left-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-insert-left.png";
     });
 
 tbwArtInsertR.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-insert-right-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-insert-right-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-insert-right-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-insert-right.png";
     });
 
 tbwArtDisc.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-disc-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-disc-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-disc-art-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-disc-art.png";
     });
 
 tbwArtBack.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-back-cover-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-back-cover-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-back-cover-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-back-cover.png";
     });
 
 fallingSingleArt.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/falling-from-high-places-single-art-1000.png";
-    tbwLink.href = "images/tbw/falling-from-high-places-single-art-1000.png";
+    tbwArt.src = "images/tbw/falling-from-high-places-single-art-500.webp";
+    tbwLink.href = "images/tbw/falling-from-high-places-single-art.png";
     });
 
 tbwSingleArt.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-single-art-1000.png";
-    tbwLink.href = "images/tbw/the-bounded-world-single-art-1000.png";
+    tbwArt.src = "images/tbw/the-bounded-world-single-art-500.webp";
+    tbwLink.href = "images/tbw/the-bounded-world-single-art.png";
     });
 
 swanSingleArt.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/swan-single-art-1000.png";
-    tbwLink.href = "images/tbw/swan-single-art-1000.png";
+    tbwArt.src = "images/tbw/swan-single-art-500.webp";
+    tbwLink.href = "images/tbw/swan-single-art.png";
     });
 
 /* Pax Americana */
@@ -349,23 +349,23 @@ const paxArtInsertR = document.getElementById("paxArtInsertR");
 const paxArtBack = document.getElementById("paxArtBack");
 
 paxArtFront.addEventListener("click", function() {
-    paxArt.src = "images/pax/pax-americana-cover-1000.png";
-    paxLink.href = "images/pax/pax-americana-cover-1000.png";
-    });                        
+    paxArt.src = "images/pax/pax-americana-cover-500.webp";
+    paxLink.href = "images/pax/pax-americana-cover.jpg";
+    });
 
 paxArtInsertL.addEventListener("click", function() {
-    paxArt.src = "images/pax/pax-americana-insert-l-1000.png";
-    paxLink.href = "images/pax/pax-americana-insert-l-1000.png";
+    paxArt.src = "images/pax/pax-americana-insert-left-500.webp";
+    paxLink.href = "images/pax/pax-americana-insert-left.jpg";
     });
 
 paxArtInsertR.addEventListener("click", function() {
-    paxArt.src = "images/pax/pax-americana-insert-r-1000.png";
-    paxLink.href = "images/pax/pax-americana-insert-r-1000.png";
+    paxArt.src = "images/pax/pax-americana-insert-right-500.webp";
+    paxLink.href = "images/pax/pax-americana-insert-right.jpg";
     });
 
 paxArtBack.addEventListener("click", function() {
-    paxArt.src = "images/pax/pax-americana-back-1000.png";
-    paxLink.href = "images/pax/pax-americana-back-1000.png";
+    paxArt.src = "images/pax/pax-americana-back-cover-500.webp";
+    paxLink.href = "images/pax/pax-americana-back-cover.jpg";
     });
 
 /* The Visitor */
@@ -377,18 +377,18 @@ const tvArtInsert = document.getElementById("tvArtInsert");
 const tvArtBack = document.getElementById("tvArtBack");
 
 tvArtFront.addEventListener("click", function() {
-    tvArt.src = "images/visitor/the-visitor-cover-1000.png";
-    tvLink.href = "images/visitor/the-visitor-cover-1000.png";
+    tvArt.src = "images/visitor/the-visitor-cover-500.webp";
+    tvLink.href = "images/visitor/the-visitor-cover.png";
     });
 
 tvArtInsert.addEventListener("click", function() {
-    tvArt.src = "images/visitor/the-visitor-insert.png";
+    tvArt.src = "images/visitor/the-visitor-insert-500.webp";
     tvLink.href = "images/visitor/the-visitor-insert.png";
     });
 
 tvArtBack.addEventListener("click", function() {
-    tvArt.src = "images/visitor/the-visitor-back-1000.png";
-    tvLink.href = "images/visitor/the-visitor-back-1000.png";
+    tvArt.src = "images/visitor/the-visitor-back-cover-500.webp";
+    tvLink.href = "images/visitor/the-visitor-back-cover.png";
     });
 
 /* Warm Strokes of Pragmatism */
@@ -398,11 +398,11 @@ const wsopLink = document.getElementById("wsop-link");
 const wsopArtBack = document.getElementById("wsopArtBack");
 
 wsopArtFront.addEventListener("click", function() {
-    wsopArt.src = "images/wsop/warm-strokes-cover-1000.png";
-    wsopLink.href = "images/wsop/warm-strokes-cover-1000.png";
+    wsopArt.src = "images/wsop/warm-strokes-cover-500.webp";
+    wsopLink.href = "images/wsop/warm-strokes-cover.png";
     });
 
 wsopArtBack.addEventListener("click", function() {
-    wsopArt.src = "images/wsop/warm-strokes-back-1000.png";
-    wsopLink.href = "images/wsop/warm-strokes-back-1000.png";
+    wsopArt.src = "images/wsop/warm-strokes-back-cover-500.webp";
+    wsopLink.href = "images/wsop/warm-strokes-back.png";
     });
