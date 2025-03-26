@@ -105,7 +105,8 @@ a {
 
 @media screen and (max-width: 996px) {
   main {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: .5em;
   }
 }
 
