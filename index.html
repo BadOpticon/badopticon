@@ -9,6 +9,10 @@
     <!-- meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homepage for Seattle progressive post-punk band Bad Optics">
+    <meta name="keywords" content="music, Seattle, punk, progressive punk, post-punk, Bad Optics">
+    <meta name="author" content="Christian J. Hidell">
+    <link rel="canonical" href="https://www.badopticon.com" />
 
     <!-- styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -22,7 +26,8 @@
 
  <main>
     <div class="video-banner">
-        <video id="IndexVideo" autoplay="" loop="">
+        <video id="IndexVideo" aria-label="A short clip of the music video for Falling from High Places by Bad Optics"
+        autoplay loop>
             <source src="video/Web Banner B.mp4" type="video/mp4" />
             <source src="video/Web Banner B.webm" type="video/webm" />
         </video>
@@ -32,49 +37,48 @@
         <div class="index-link">
             <h3><a href="news.html"
                 onmouseover="globe.src='images/index/globe-icon-animated.gif';"
-                onmouseout="globe.src='images/index/globe-icon.png';"><img id="globe" src="images/index/globe-icon.png" /> NEWS</a></h3>
+                onmouseout="globe.src='images/index/globe-icon.png';">
+            <img id="globe" src="images/index/globe-icon.png"
+            alt="A spinning globe icon from the artwork for The Bounded World" />
+            NEWS</a></h3>
         </div>
 
         <div class="index-link">
             <h3><a href="music.html"
                 onmouseover="death.src='images/index/death-tv-icon-animated.gif';"
-                onmouseout="death.src='images/index/death-tv-icon.png';"><img id="death" src="images/index/death-tv-icon.png" /> MUSIC</a></h3>
+                onmouseout="death.src='images/index/death-tv-icon.png';">
+                <img id="death" src="images/index/death-tv-icon.png"
+                alt="A flickering TV icon surrounded by rats and eyeballs taken from Bad Optics merchandise" />
+                MUSIC</a></h3>
         </div>
 
         <div class="index-link">
             <h3><a href="videos.html"
                 onmouseover="falling.src='images/index/falling-tv-icon-animated.gif';"
-                onmouseout="falling.src='images/index/falling-tv-icon.png';"><img id="falling" src="images/index/falling-tv-icon.png" /> VIDEOS</a></h3>
+                onmouseout="falling.src='images/index/falling-tv-icon.png';">
+                <img id="falling" src="images/index/falling-tv-icon.png"
+                alt="A TV icon depicting a man falling from the top to the bottom taken from the Falling from High Places single artwork" />
+                VIDEOS</a></h3>
         </div>
 
         <div class="index-link">
             <h3><a href="shows.html"
                 onmouseover="swan.src='images/index/swan-icon-animated.gif';"
-                onmouseout="swan.src='images/index/swan-icon.png';"><img id="swan" src="images/index/swan-icon.png" /> SHOWS</a></h3>
+                onmouseout="swan.src='images/index/swan-icon.png';">
+                <img id="swan" src="images/index/swan-icon.png"
+                alt="An icon of a swan flapping its wings taken from the Swan single artwork" />
+                SHOWS</a></h3>
+        </div>
+
+        <div class="index-link">
+            <h3><a href="epk.html"
+                onmouseover="bells.src='images/index/bells-icon-animated.gif';"
+                onmouseout="bells.src='images/index/bells-icon.png';">
+                <img id="bells" src="images/index/bells-icon.png"
+                alt="A spinning ring of bells icon taken from The Bounded World disc art" />
+                EPK</a></h3>
         </div>
     </div>
-
-    <!-- <div class="container" style="margin-top: 50px;">
-        <div class="row index">
-            <div class="col-3 indexImg">
-                <a href="music.html"><img src="images/music.png" onmouseover="this.src='images/music2.png';" onmouseout="this.src='images/music.png';"></a>
-            </div>
-
-            <div class="col-3 indexImg">
-                <a href="shows.html"><img src="images/shows.png" onmouseover="this.src='images/shows2.png';" onmouseout="this.src='images/shows.png';"></a>
-            </div>
-        </div>
-
-        <div class="row index">
-            <div class="col-3 indexImg">
-                <a href="blog.html"><img src="images/blog.png" onmouseover="this.src='images/blog2.png';" onmouseout="this.src='images/blog.png';"></a>
-            </div>
-
-            <div class="col-3 indexImg">
-                <a href="epk.html"><img src="images/epk.png" onmouseover="this.src='images/epk2.png';" onmouseout="this.src='images/epk.png';"></a>
-            </div>
-        </div>
-    </div> -->
  </main>
 
     <!-- bootstrap styling -->
