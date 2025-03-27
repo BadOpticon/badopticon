@@ -669,7 +669,7 @@ a {
 /* LYRICS BOX */
 
 .lyrics-overlay {
-  background-color: var(--redbrown);
+  background-color: var(--lightgrey);
   max-height: 0;
   width: 30rem;
   padding-left: 10px;
@@ -680,20 +680,33 @@ a {
   transition: max-height ease-in-out 1000ms, width ease-in-out 1000ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
 }
 
- .lyrics-overlay.active {
-  max-height: 1500px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-top: 5px;
-  margin-bottom: 5px;
- }
+  .lyrics-overlay p {
+    color: var(--black);
+  }
+
+  .lyrics-overlay.active {
+    max-height: 1500px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #lyricsUpsideDown {
+    background-color: var(--lightgrey);
+    height: 100%;
+  }
+
+    #lyricsUpsideDown .active {
+      max-height: 500px;
+    }
 
 .lyrics-chorus {
-text-align: right;
+  text-align: right;
 }
 
 .lyrics-center {
-text-align: center;
+  text-align: center;
 }
 
 /* MUSIC MEDIA QUERIES */

@@ -13,6 +13,15 @@ function jump(h){
 
 /* The Bounded World */
 
+/* 01 */ function toggleUpsideDown() {
+    var div = document.getElementById("lyricsUpsideDown");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
 /* 02 */ function toggleFalling() {
     var div = document.getElementById("lyricsFalling");
     if (div.className === "lyrics-overlay") {
