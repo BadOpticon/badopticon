@@ -307,8 +307,8 @@ const tbwArtInsertR = document.getElementById("tbwArtInsertR");
 const tbwArtDisc = document.getElementById("tbwArtDisc");
 const tbwArtBack = document.getElementById("tbwArtBack");
 const fallingSingleArt = document.getElementById("fallingSingleArt");
-const tbwSingleArt = document.getElementById("tbwSingleArt");
-const swanArt = document.getElementById("swanSingleArt");
+// const tbwSingleArt = document.getElementById("tbwSingleArt");
+// const swanSingleArt = document.getElementById("swanSingleArt");
 
 tbwArtFront.addEventListener("click", function() {
     tbwArt.src = "images/tbw/the-bounded-world-cover-500.webp";
@@ -340,15 +340,15 @@ fallingSingleArt.addEventListener("click", function() {
     tbwLink.href = "images/tbw/falling-from-high-places-single-art.png";
     });
 
-tbwSingleArt.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/the-bounded-world-single-art-500.webp";
-    tbwLink.href = "images/tbw/the-bounded-world-single-art.png";
-    });
+// tbwSingleArt.addEventListener("click", function() {
+//     tbwArt.src = "images/tbw/the-bounded-world-single-art-500.webp";
+//     tbwLink.href = "images/tbw/the-bounded-world-single-art.png";
+//     });
 
-swanSingleArt.addEventListener("click", function() {
-    tbwArt.src = "images/tbw/swan-single-art-500.webp";
-    tbwLink.href = "images/tbw/swan-single-art.png";
-    });
+// swanSingleArt.addEventListener("click", function() {
+//     tbwArt.src = "images/tbw/swan-single-art-500.webp";
+//     tbwLink.href = "images/tbw/swan-single-art.png";
+//     });
 
 /* Pax Americana */
 
