@@ -701,6 +701,11 @@ a {
       max-height: 500px;
     }
 
+    #lyricsUpsideDown p {
+      font-size: .6em;
+      text-align: center;
+    }
+
 .lyrics-chorus {
   text-align: right;
 }
