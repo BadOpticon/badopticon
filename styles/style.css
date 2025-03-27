@@ -105,7 +105,7 @@ a {
 
 @media screen and (max-width: 996px) {
   main {
-    padding: 0 0 5em 0;
+    padding: 0 0 4em 0;
   }
 }
 
@@ -284,10 +284,6 @@ a {
     margin-bottom: 10px;
   }
 
-  .post.bottom {
-    border-bottom: none;
-  }
-
   .post-subsection {
     text-decoration: underline;
     margin-bottom: 0;
@@ -364,24 +360,27 @@ a {
 
   .header {
     margin: 0;
+    padding: .01em;
+    border: none;
   }
 
   .post-title {
     max-width: 100%;
     margin: 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: none;
     text-align: center;
   }
 
   .post {
     padding-left: .2em;
     padding-right: .2em;
+    margin-bottom: 1em;
+    border: none;
+  }
+
+  .post.bottom {
+    border-bottom: none;
     margin-bottom: 0;
-    border-top: none;
-    border-right: none;
-    border-left: none;
   }
 
   .return a {
@@ -601,6 +600,7 @@ a {
   .music-nav.albums {
     margin-left: 1em;
     margin-right: auto;
+    padding-right: 25%;
   }
 
   .music-nav.eps {
@@ -630,7 +630,7 @@ a {
   .music-navCont {
     position: relative;
     display: inline-block;
-    margin-right: 8%;
+    margin: auto;
   }
 
     .eps .music-navItem {
@@ -706,11 +706,11 @@ text-align: center;
     border-right: none !important;
   }
 
-    .music>.post>.post-split-left {
+    .music .post-split-left {
       order: 2;
     }
 
-    .music>.post>.post-split-right {
+    .music> .post-split-right {
       order: 1;
     }
 
@@ -720,10 +720,44 @@ text-align: center;
   }
 
   .music-nav {
+    max-width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+    .music-nav.albums,
+    .music-nav.eps {
+      margin-left: 0;
+      margin-right: 0;
+      }
+
+      .music-nav.albums {
+        padding-right: 0%;
+      }
+
+    .music-nav img {
+      max-width: 150px;
+    }
+
+      .music-nav.eps img {
+        max-width: 130px;
+      }
+
+      .albums .music-navItem,
+      .eps .music-navItem {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+    .music-navCont {
+      margin: 1em;
+    }
+
+  /* .music-nav {
     visibility: hidden;
     clear: both;
     display: none;
-  }
+  } */
 }
 
 /*====================================================\
@@ -838,6 +872,6 @@ footer {
 
   @media screen and (max-width: 996px) {
     footer {
-      border-top: 2px solid var(--black);
+      border: none;
     }
   }
