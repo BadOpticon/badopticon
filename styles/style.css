@@ -847,7 +847,7 @@ footer {
   color: var(--white);
   padding: 5px;
   text-align: center;
-  border-top: 4px solid var(--black);
+  border-top: 2px solid var(--black);
   position: relative;
   bottom: 0;
   width: 100%;
