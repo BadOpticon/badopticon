@@ -268,6 +268,7 @@ a {
 
 .post {
   background: var(--rust);
+  max-width: 90%;
   margin-bottom: .5em;
   padding: 15px 20px;
   border: 2px solid var(--black);
@@ -288,6 +289,16 @@ a {
     text-decoration: underline;
     margin-bottom: 0;
   }
+
+    .left {
+      margin-left: 4em;
+      margin-right: auto;
+    }
+
+    .right {
+      margin-left: auto;
+      margin-right: 4em;
+    }
 
 .post-split-right {
   text-align: center;
@@ -372,13 +383,20 @@ a {
   }
 
   .post {
+    max-width: 100%;
     padding-left: .2em;
     padding-right: .2em;
     margin-bottom: 1em;
     border: none;
   }
 
-  .post.bottom {
+  .left,
+  .right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .bottom {
     border-bottom: none;
     margin-bottom: 0;
   }
@@ -508,8 +526,8 @@ a {
 \*===================================================*/
 
 .music {
-  max-width: 90%;
-  margin: 1em auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
   .music>.post h6 {
@@ -588,33 +606,25 @@ a {
 }
 
   .music-nav img {
-    max-width: 160px;
+    max-width: 175px;
     width: 100%;
   }
 
   .music-nav h3,
   .music-nav h4 {
     text-shadow: 1px 3px 1px var(--red);
+    margin-bottom: .5em;
   }
 
   .music-nav.albums {
     margin-left: 1em;
     margin-right: auto;
-    padding-right: 25%;
   }
 
   .music-nav.eps {
     margin-left: auto;
     margin-right: 1em;
   }
-
-    .music-nav.eps img {
-      max-width: 150px;
-    }
-
-    .eps h4 {
-      margin-right: 2%;
-    }
 
 .music-navHead {
   display: flex;
@@ -623,7 +633,8 @@ a {
 
 .music-navItem {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
   width: 100%;
 }
 
@@ -633,10 +644,10 @@ a {
     margin: auto;
   }
 
-    .eps .music-navItem {
+    /* .eps .music-navItem {
       justify-content: space-between;
       flex-wrap: nowrap;
-    }
+    } */
 
   .music-navOverlay {
     position: absolute;
@@ -718,8 +729,9 @@ a {
 
 @media screen and (max-width: 996px) {
   .music {
-    max-width: 100%;
     margin: 0;
+    padding-left: 0;
+    padding-right: 0;
     border-left: none !important;
     border-right: none !important;
   }
