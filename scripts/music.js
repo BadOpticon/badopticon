@@ -399,7 +399,9 @@ paxArtDisc.addEventListener("click", function() {
 const tvArt = document.getElementById("tv-art");
 const tvLink = document.getElementById("tv-link")
 const tvArtFront = document.getElementById("tvArtFront");
-const tvArtInsert = document.getElementById("tvArtInsert");
+const tvArtInsertL = document.getElementById("tvArtInsertL");
+const tvArtInsertR = document.getElementById("tvArtInsertR");
+const tvArtDisc = document.getElementById("tvArtDisc");
 const tvArtBack = document.getElementById("tvArtBack");
 
 tvArtFront.addEventListener("click", function() {
@@ -407,9 +409,19 @@ tvArtFront.addEventListener("click", function() {
     tvLink.href = "images/visitor/the-visitor-cover.png";
     });
 
-tvArtInsert.addEventListener("click", function() {
-    tvArt.src = "images/visitor/the-visitor-insert-500.webp";
-    tvLink.href = "images/visitor/the-visitor-insert.png";
+tvArtInsertL.addEventListener("click", function() {
+    tvArt.src = "images/visitor/the-visitor-insert-left-500.webp";
+    tvLink.href = "images/visitor/the-visitor-insert-left.png";
+    });
+
+tvArtInsertR.addEventListener("click", function() {
+    tvArt.src = "images/visitor/the-visitor-insert-right-500.webp";
+    tvLink.href = "images/visitor/the-visitor-insert-right.png";
+    });
+
+tvArtDisc.addEventListener("click", function() {
+    tvArt.src = "images/visitor/the-visitor-disc-art-500.webp";
+    tvLink.href = "images/visitor/the-visitor-disc-art.png";
     });
 
 tvArtBack.addEventListener("click", function() {
