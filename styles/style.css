@@ -806,6 +806,7 @@ a {
       .albums .music-navItem,
       .eps .music-navItem {
         overflow-x: scroll;
+        scroll-behavior: smooth;
         justify-content: center;
         scrollbar-width: none;
         -ms-overflow-style: none;
