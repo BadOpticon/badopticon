@@ -279,9 +279,7 @@ a {
   }
 
   .post img {
-    max-width: 450px;
     width: 100%;
-    margin-bottom: 10px;
   }
 
   .post-subsection {
@@ -509,6 +507,16 @@ a {
     text-decoration: underline;
   }
 
+  .home-bio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+    .home-bio p {
+      font-size: 1em;
+    }
+
 /* NEWS MEDIA QUERIES */
 @media screen and (max-width: 996px) {
   .news {
@@ -537,6 +545,11 @@ a {
   .music>.post h6 {
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  .music>.post img {
+    max-width: 450px;
+    margin-bottom: 10px;
   }
 
 .tracklist>p {
@@ -611,7 +624,6 @@ a {
 
   .music-nav img {
     max-width: 175px;
-    width: 100%;
   }
 
   .music-nav h3,
@@ -637,9 +649,8 @@ a {
 
 .music-navItem {
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
   width: 100%;
+
 }
 
   .music-navCont {
@@ -647,11 +658,6 @@ a {
     display: inline-block;
     margin: auto;
   }
-
-    /* .eps .music-navItem {
-      justify-content: space-between;
-      flex-wrap: nowrap;
-    } */
 
   .music-navOverlay {
     position: absolute;
@@ -680,6 +686,18 @@ a {
     transform: translate(-50%, -50%);
     text-align: center;
   }
+
+  #MusicNavArrows {
+    justify-content: center;
+  }
+
+    #MusicNavArrows h3 {
+      color: var(--lightgrey);
+      font-size: 1.5em;
+      text-shadow: none;
+      word-spacing: 1em;
+      margin-bottom: 0;
+    }
 
 /* LYRICS BOX */
 
@@ -731,6 +749,14 @@ a {
 
 /* MUSIC MEDIA QUERIES */
 
+@media screen and (min-width: 996px) {
+  #MusicNavArrows {
+    visibility: hidden;
+    clear: both;
+    display: none;
+  }
+}
+
 @media screen and (max-width: 996px) {
   .music {
     margin: 0;
@@ -779,19 +805,26 @@ a {
 
       .albums .music-navItem,
       .eps .music-navItem {
+        overflow-x: scroll;
         justify-content: center;
-        flex-wrap: wrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        -webkit-scrollbar: none;
       }
+
+        #ep-list {
+          justify-content: flex-start;
+        }
 
     .music-navCont {
       margin: 1em;
     }
 
-  /* .music-nav {
+  .music-navOverlay {
     visibility: hidden;
     clear: both;
     display: none;
-  } */
+  }
 }
 
 /*====================================================\
