@@ -97,10 +97,6 @@ a {
     color: var(--white);
   }
 
-ul, ol {
-  margin-bottom: 0;
-}
-
 /* HTML MEDIA QUERIES */
 
 @media screen and (max-width: 996px) {
@@ -516,7 +512,7 @@ ul, ol {
       text-decoration: underline;
     }
 
-  .news .post img {
+  .news img {
     border: 1px solid var(--black);
     max-width: 400px;
     width: 100%;
@@ -562,6 +558,10 @@ ul, ol {
     margin-bottom: 10px;
   }
 
+  .music .post-split-right {
+    text-align: center;
+  }
+
 .tracklist>p {
  margin-bottom: 0;
 }
@@ -587,6 +587,7 @@ ul, ol {
   font-size: 12px;
   text-align: center;
   padding-left: 0;
+  margin-bottom: 0;
 }
 
   .art-link-x li {
@@ -638,7 +639,7 @@ ul, ol {
   }
 
   .music-nav.albums {
-    max-width: 40%;
+    max-width: 35%;
     margin-left: 6em;
     margin-right: auto;
   }
@@ -917,9 +918,10 @@ ul, ol {
   background-color: var(--redbrown) !important;
 }
 
-#tbwTourPoster {
+.tour-poster {
   max-width: 400px;
   width: 100%;
+  border: 1px solid var(--black);
 }
 
 .tour-dates {
