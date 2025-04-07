@@ -97,6 +97,10 @@ a {
     color: var(--white);
   }
 
+ul, ol {
+  margin-bottom: 0;
+}
+
 /* HTML MEDIA QUERIES */
 
 @media screen and (max-width: 996px) {
@@ -298,10 +302,6 @@ a {
         margin-right: 4em;
       }
 
-.post-split-right {
-  text-align: center;
-}
-
 .small {
   font-size: .7em !important;
 }
@@ -490,6 +490,16 @@ a {
 |                         HOME                        |
 \*===================================================*/
 
+.home-bio {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+  .home-bio p {
+    font-size: 1em;
+  }
+
 .news {
   margin-bottom: 10px;
   padding-left: 2em;
@@ -500,18 +510,18 @@ a {
   .news h4,
   .news h5 {
     text-shadow: none;
-    text-decoration: underline;
   }
 
-  .home-bio {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-  }
-
-    .home-bio p {
-      font-size: 1em;
+    .news h3 {
+      text-decoration: underline;
     }
+
+  .news .post img {
+    border: 1px solid var(--black);
+    max-width: 400px;
+    width: 100%;
+    float: right;
+  }
 
 /* NEWS MEDIA QUERIES */
 @media screen and (max-width: 996px) {
@@ -628,7 +638,7 @@ a {
   }
 
   .music-nav.albums {
-    max-width: 35%;
+    max-width: 40%;
     margin-left: 6em;
     margin-right: auto;
   }
@@ -903,9 +913,18 @@ a {
     color: var(--yellow) !important;
   }
 
-  .bit-button {
-    background-color: var(--redbrown) !important;
-  }
+.bit-button {
+  background-color: var(--redbrown) !important;
+}
+
+#tbwTourPoster {
+  max-width: 400px;
+  width: 100%;
+}
+
+.tour-dates {
+  font-size: 1.1em;
+}
 
 /* SHOWS MEDIA QUERIES */
 
