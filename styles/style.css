@@ -5,17 +5,16 @@
     --white: rgba(255, 255, 255, 1);
     --black: rgba(0, 0, 0, 1);
     --red: rgba(163, 10, 2, 1);
-    --yellow: rgba(237, 222, 5, 1);
-    --redbrown: rgba(96, 32, 37, 1);
-
     --rust: rgba(130, 66, 60, 1);
-    --salmon: rgba(185, 129, 116, 1);
-    --darkgrey: rgba(34, 34, 34, 1);
-    --dgtransparent: rgba(34, 34, 34, .6);
-    --grey: rgba(106, 106, 106, 1);
-    --greytransparent: rgba(106, 106, 106, .5);
+    --redbrown: rgba(96, 32, 37, 1);
+    --yellow: rgba(237, 222, 5, 1);
     --lightgrey: rgba(210, 209, 209, 1);
     --lgtransparent: rgba(210, 209, 209, .4);
+    --grey: rgba(106, 106, 106, 1);
+    --greytransparent: rgba(106, 106, 106, .5);
+    --darkgrey: rgba(34, 34, 34, 1);
+    --dgtransparent: rgba(34, 34, 34, .6);
+
 }
 
 html {
