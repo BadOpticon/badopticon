@@ -41,6 +41,10 @@ main {
   background-attachment: fixed;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  text-wrap: pretty;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   text-transform: uppercase;
@@ -78,6 +82,10 @@ h6 {
 p {
   font-size: 16px;
   font-weight: 400;
+}
+
+ul, ol {
+  padding-left: 1em;
 }
 
 a {
@@ -285,7 +293,7 @@ a {
 
     .left,
     .right {
-      max-width: 90%;
+      max-width: 92%;
     }
 
       .left {
@@ -374,6 +382,10 @@ a {
     margin: 0;
     border: none;
     text-align: center;
+  }
+
+  .post-name {
+      text-align: center;
   }
 
   .post {
@@ -489,7 +501,7 @@ a {
 .home-bio {
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
+  width: 99%;
 }
 
   .home-bio p {
@@ -639,7 +651,7 @@ a {
   }
 
   .music-nav.albums {
-    max-width: 35%;
+    max-width: 42%;
     margin-left: 6em;
     margin-right: auto;
   }
@@ -790,7 +802,7 @@ a {
       order: 2;
     }
 
-    .music> .post-split-right {
+    .music .post-split-right {
       order: 1;
     }
 
