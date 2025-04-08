@@ -594,7 +594,8 @@ a {
   border: 1px solid var(--black);
 }
 
-.art-link-x {
+.art-link-x,
+.art-link-y {
   list-style-type: none;
   font-size: 12px;
   text-align: center;
@@ -606,13 +607,6 @@ a {
     padding: 5px 0px;
     display: inline-block;
   }
-
-.art-link-y {
-  list-style-type: none;
-  font-size: 12px;
-  text-align: center;
-  padding-left: 0;
-}
 
   .art-link-y li {
     padding: 3px;
@@ -805,6 +799,10 @@ a {
     .music .post-split-right {
       order: 1;
     }
+
+  .bc-wrap {
+    text-align: center;
+  }
 
   .lyrics-overlay {
     width: 100%;
