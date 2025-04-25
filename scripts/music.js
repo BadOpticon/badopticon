@@ -317,7 +317,7 @@ const tbwArtDisc = document.getElementById("tbwArtDisc");
 const tbwArtBack = document.getElementById("tbwArtBack");
 const fallingSingleArt = document.getElementById("fallingSingleArt");
 const tbwSingleArt = document.getElementById("tbwSingleArt");
- const swanSingleArt = document.getElementById("swanSingleArt");
+const swanSingleArt = document.getElementById("swanSingleArt");
 
 tbwArtFront.addEventListener("click", function() {
     tbwArt.src = "images/tbw/the-bounded-world-cover-500.webp";
