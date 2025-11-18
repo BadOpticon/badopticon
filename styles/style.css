@@ -22,9 +22,10 @@ html {
 }
 
 body {
-    color: var(--white);
-    font-family: "Libre Franklin";
+    background: var(--rust);
     height: 100%;
+    font-family: "Libre Franklin";
+    color: var(--white);
 }
 
 main {
