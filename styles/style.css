@@ -35,7 +35,7 @@ main {
   padding-top: .5em;
   padding-bottom: 1em;
   background-color: var(--darkgrey);
-  background-image: url("../images/dcb-cult-logo.png");
+  background-image: url("../images/dcb-cult-logo.webp");
   box-shadow: inset 0 0 0 2000px var(--dgtransparent);
   background-size: 50%;
   background-position: center;
