@@ -578,8 +578,12 @@ main#index {
     }
 
     .index-link img.index-static {
-      position: static;
+      position: relative;
     }
+
+      .index-link a:hover img.index-static {
+        opacity: 1;
+      }
 
     .index-link img.index-active {
       display: none;
