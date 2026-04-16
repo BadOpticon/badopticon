@@ -577,6 +577,10 @@ main#index {
       text-shadow: 1px 3px 1px var(--red);
     }
 
+    .index-link img.index-static {
+      position: static;
+    }
+
     .index-link img.index-active {
       display: none;
     }
