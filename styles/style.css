@@ -154,7 +154,7 @@ a:visited {
 
 /* HTML MEDIA QUERIES */
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   main {
     padding: 0 0 4em 0;
     background-size: 150%;
@@ -225,7 +225,7 @@ a:visited {
 
   /* NAVBAR MEDIA QUERIES */
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .navigator {
     border: none;
   }
@@ -379,7 +379,7 @@ a:visited {
   margin-bottom: 5px;
 }
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 992px) {
   .link-animation a {
     background-image: linear-gradient(
       to right,
@@ -421,7 +421,7 @@ a:visited {
 
 /* MAIN MEDIA QUERIES */
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   #Top {
     flex-direction: column;
   }
@@ -463,13 +463,18 @@ a:visited {
   }
 
   .return a,
-  .return a:visited {
+  .return a:visited,
+  .link-animation a,
+  .link-animation a:visited {
     color: var(--white);
   }
 
     .return a:hover,
     .return a:active,
-    .return a:visited:hover {
+    .return a:visited:hover,
+    .link-animation a:hover,
+    .link-animation a:active,
+    .link-animation a:visited:hover {
     color: var(--yellow)
     }
 }
@@ -487,7 +492,6 @@ main#index {
  }
 
  .index-active {
-  position: absolute;
   opacity: 0;
  }
 
@@ -552,7 +556,7 @@ main#index {
 
 /* INDEX MEDIA QUERIES */
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   main#index {
     padding-bottom: 0 !important;
     max-width: 100%;
@@ -571,6 +575,10 @@ main#index {
     .index-link h2,
     .index-link h3 {
       text-shadow: 1px 3px 1px var(--red);
+    }
+
+    .index-link img.index-active {
+      display: none;
     }
 }
 
@@ -616,7 +624,7 @@ main#index {
   }
 
 /* NEWS MEDIA QUERIES */
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .news {
     max-width: 100%;
     margin-bottom: 0;
@@ -895,7 +903,7 @@ main#index {
 
 /* MUSIC MEDIA QUERIES */
 
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 992px) {
   #MusicNavArrows {
     visibility: hidden;
     clear: both;
@@ -903,7 +911,7 @@ main#index {
   }
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .music {
     margin: 0;
     padding-left: 0;
@@ -1025,7 +1033,7 @@ main#index {
     border: 0;
   }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .youtube {
     margin-bottom: 10px;
   }
@@ -1070,7 +1078,7 @@ main#index {
 
 /* SHOWS MEDIA QUERIES */
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 991px) {
   .shows {
     max-width: 100%;
   }
@@ -1094,7 +1102,7 @@ main#index {
 
   /* EPK MEDIA QUERIES */
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 991px) {
     .epk-top,
     .epk-bottom {
       width: 100%;
@@ -1157,7 +1165,7 @@ footer {
 
 /* FOOTER MEDIA QUERIES */
 
-  @media screen and (max-width: 996px) {
+  @media screen and (max-width: 991px) {
     footer {
       border: none;
     }
