@@ -1,6 +1,51 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+/* FONTS */
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../fonts/LibreFranklin-VariableFont_wght.ttf') format('truetype'),
+       url('../fonts/LibreFranklin-VariableFont_wght.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../fonts/LibreFranklin-Italic-VariableFont_wght.ttf') format('truetype'),
+       url('../fonts/LibreFranklin-Italic-VariableFont_wght.woff2') format('woff2');
+  font-weight: 300 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Tangerine';
+  src: url(../fonts/Tangerine-Regular.ttf) format('truetype'),
+       url(../fonts/Tangerine-Regular.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tangerine Bold';
+  src: url(../fonts/Tangerine-Bold.ttf) format('truetype'),
+       url(../fonts/Tangerine-Bold.woff2) format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.tangerine-regular {
+  font-family: 'Tangerine', cursive;
+  font-size: 2rem;
+}
+
+.tangerine-bold {
+  font-family: 'Tangerine Bold', cursive;
+  font-size: 2rem;
+}
+
+/* VARIABLES */
 
 :root {
     --white: rgba(255, 255, 255, 1);
@@ -26,7 +71,7 @@ html {
 body {
     background: var(--rust);
     height: 100%;
-    font-family: "Libre Franklin";
+    font-family: 'Libre Franklin';
     color: var(--white);
 }
 
@@ -90,7 +135,8 @@ ul, ol {
   padding-left: 1em;
 }
 
-a {
+a,
+a:visited {
     color: var(--yellow);
     text-decoration: none;
     transition: all .2s ease-in-out;
@@ -100,16 +146,10 @@ a {
     -ms-transition: all .2s ease-in-out;
 }
 
-    a:hover {
-      color: var(--darkyellow) !important;
-    }
-
-    a:active {
+    a:hover,
+    a:active,
+    a:visited:hover {
       color: var(--darkyellow);
-    }
-
-    a:visited {
-      color: var(--yellow);
     }
 
 /* HTML MEDIA QUERIES */
@@ -145,12 +185,15 @@ a {
   align-items: flex-end;
 }
 
-  .nav-title a {
+  .nav-title a,
+  .nav-title a:visited {
     color: var(--white);
   }
 
-  .nav-title a:hover {
-    color: var(--white) !important;
+  .nav-title a:hover,
+  .nav-title a:active,
+  .nav-title a:visited:hover {
+    color: var(--white);
   }
 
 .toggle-icon {
@@ -191,17 +234,13 @@ a {
     display: none;
   }
 
-  .toggle-icon a {
+  .toggle-icon a,
+  .toggle-icon a:visited,
+  .toggle-icon a:hover,
+  .toggle-icon a:active,
+  .toggle-icon a:visited:hover {
     color: var(--white)
   }
-
-    .toggle-icon a:hover {
-      color: var(--white)
-    }
-
-    .toggle-icon a:active {
-      color: var(--white)
-    }
 
     .nav-link ul {
       display: inline;
@@ -223,7 +262,8 @@ a {
         text-align: center;
       }
 
-    .nav-link a:hover {
+    .nav-link a:hover,
+    .nav-link a:visited:hover {
       color: var(--yellow);
     }
 
@@ -379,20 +419,6 @@ a {
   }
 }
 
-.tangerine-regular {
-  font-family: "Tangerine", cursive;
-  font-weight: 400;
-  font-size: 2rem;
-  font-style: normal;
-}
-
-.tangerine-bold {
-  font-family: "Tangerine", cursive;
-  font-weight: 700;
-  font-style: normal;
-}
-
-
 /* MAIN MEDIA QUERIES */
 
 @media screen and (max-width: 996px) {
@@ -436,11 +462,14 @@ a {
     margin-bottom: 0;
   }
 
-  .return a {
+  .return a,
+  .return a:visited {
     color: var(--white);
   }
 
-    .return a:hover {
+    .return a:hover,
+    .return a:active,
+    .return a:visited:hover {
     color: var(--yellow)
     }
 }
@@ -448,6 +477,18 @@ a {
 /*====================================================\
 |                       INDEX                         |
 \*===================================================*/
+
+main#index {
+  background-image: none;
+}
+
+.index-static {
+  position: absolute;
+ }
+
+ .index-active {
+  opacity: 0;
+ }
 
 .video-banner {
   width: 100%;
@@ -466,9 +507,7 @@ a {
 
 .index {
   position: relative;
-  /* background-color: var(--rust); */
   margin: .5em 2em;
-  /* border: 4px solid black; */
   width: 28%;
 }
 
@@ -485,18 +524,29 @@ a {
     margin-right: 1em;
   }
 
+    .index-link a:hover img.index-static {
+      opacity: 0;
+    }
+
+    .index-link a:hover img.index-active {
+      opacity: 1;
+    }
+
   .index-link h2,
   .index-link h3 {
     display: inline-block;
     text-shadow: 1px 3px 1px var(--red);
   }
 
-  .index-link a {
+  .index-link a,
+  .index-link a:visited {
     color: var(--white);
   }
 
-    .index-link a:hover {
-      color: var(--yellow) !important;
+    .index-link a:hover,
+    .index-link a:active,
+    .index-link a:visited:hover {
+      color: var(--yellow);
     }
 
 /* INDEX MEDIA QUERIES */
@@ -617,8 +667,9 @@ a {
   color: var(--white);
 }
 
-  .tracklist a:hover {
-    color: var(--yellow) !important;
+  .tracklist a:hover,
+  .tracklist a:visited:hover {
+    color: var(--yellow);
   }
 
 .writing-credits {
@@ -662,7 +713,7 @@ a {
 
     .art-link-x a:hover,
     .art-link-y a:hover {
-      color: var(--yellow) !important;
+      color: var(--yellow);
     }
 
 .buy-button {
@@ -991,11 +1042,14 @@ a {
   max-width: 90%;
  }
 
- .show>.post a {
+ .show>.post a,
+ .show>.post a:visited {
   color: var(--white) !important;
  }
 
-  .shows>.post a:hover {
+  .shows>.post a:hover,
+  .shows>.post a:active,
+  .shows>.post a:visited:hover {
     color: var(--yellow) !important;
   }
 
@@ -1089,20 +1143,15 @@ footer {
     justify-content: center;
   }
 
-  .footer-nav a {
+  .footer-nav a,
+  .footer-nav a:visited {
     color: var(--white);
   }
 
-    .footer-nav a:hover {
+    .footer-nav a:hover,
+    .footer-nav a:active,
+    .footer-nav a:visited:hover {
       color: var(--yellow);
-    }
-
-    .footer-nav a:active {
-      color: var(--yellow);
-    }
-
-    .footer-nav:visited {
-      color: var(--white);
     }
 
 /* FOOTER MEDIA QUERIES */

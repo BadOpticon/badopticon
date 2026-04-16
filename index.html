@@ -15,79 +15,120 @@
     <link rel="canonical" href="https://www.badopticon.com" />
 
     <!-- styling -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link href="styles/style.css" rel="stylesheet" />
 </head>
 
 <body>
-
  <main id="index">
     <div class="video-banner">
         <video id="IndexVideo" aria-label="A short clip of the music video for Falling from High Places by Bad Optics"
         preload="auto" autoPlay loop muted>
-            <source src="video/Web Banner B.mp4" type="video/mp4" />
             <source src="video/Web Banner B.webm" type="video/webm" />
+            <!-- <source src="video/Web Banner B.mp4" type="video/mp4" /> -->
         </video>
     </div>
 
     <div class="index">
         <div class="index-link">
-            <h3><a href="home.html"
+            <h3>
+                <a href="home.html">
+                <img class="index-static" src="images/index/globe-icon-100.webp" fetchpriority="high"
+                alt="A globe icon from the artwork for The Bounded World"  />
+                <img class="index-active" src="images/index/globe-icon-animated.gif" fetchpriority="high"
+                alt="An animated spinning globe icon from the artwork for The Bounded World"  />
+                HOME</a>
+            </h3>
+
+            <!-- <h3><a href="home.html"
                 onmouseover="globe.src='images/index/globe-icon-animated.gif';"
                 onmouseout="globe.src='images/index/globe-icon-100.webp';">
             <img id="globe" src="images/index/globe-icon-100.webp"
             alt="A spinning globe icon from the artwork for The Bounded World"
             fetchpriority="high" />
-            HOME</a></h3>
+            HOME</a></h3> -->
         </div>
 
         <div class="index-link">
-            <h3><a href="music.html"
+            <h3>
+                <a href="music.html">
+                <img class="index-static" src="images/index/death-tv-icon-100.webp" fetchpriority="high"
+                alt="A TV icon surrounded by rats and eyeballs taken from Bad Optics merchandise" />
+                <img class="index-active" src="images/index/death-tv-icon-animated.gif"
+                alt="An animated flickering TV icon surrounded by rats and eyeballs taken from Bad Optics merchandise"
+                fetchpriority="high" />
+                MUSIC</a>
+            </h3>
+
+            <!-- <h3><a href="music.html"
                 onmouseover="death.src='images/index/death-tv-icon-animated.gif';"
                 onmouseout="death.src='images/index/death-tv-icon-100.webp';">
                 <img id="death" src="images/index/death-tv-icon-100.webp"
                 alt="A flickering TV icon surrounded by rats and eyeballs taken from Bad Optics merchandise"
                 fetchpriority="high" />
-                MUSIC</a></h3>
+                MUSIC</a></h3> -->
         </div>
 
         <div class="index-link">
-            <h3><a href="videos.html"
+            <h3>
+                <a href="videos.html">
+                <img class="index-static" src="images/index/falling-tv-icon-100.webp" fetchpriority="high"
+                alt="A TV icon depicting a man falling taken from the Falling from High Places single artwork" />
+                <img class="index-active" src="images/index/falling-tv-icon-animated.gif" fetchpriority="high"
+                alt="An animated TV icon depicting a man falling from the top to the bottom taken from the Falling from High Places single artwork" />
+                VIDEOS</a>
+            </h3>
+
+            <!-- <h3><a href="videos.html"
                 onmouseover="falling.src='images/index/falling-tv-icon-animated.gif';"
                 onmouseout="falling.src='images/index/falling-tv-icon-100.webp';">
                 <img id="falling" src="images/index/falling-tv-icon-100.webp"
                 alt="A TV icon depicting a man falling from the top to the bottom taken from the Falling from High Places single artwork"
                 fetchpriority="high" />
-                VIDEOS</a></h3>
+                VIDEOS</a></h3> -->
         </div>
 
         <div class="index-link">
-            <h3><a href="shows.html"
+            <h3>
+                <a href="shows.html">
+                <img class="index-static" src="images/index/swan-icon-100.webp" fetchpriority="high"
+                alt="An icon of a swan taken from the Swan single artwork" />
+                <img class="index-active" src="images/index/swan-icon-animated.gif" fetchpriority="high"
+                alt="An animated icon of a swan flapping its wings taken from the Swan single artwork" />
+                SHOWS</a>
+            </h3>
+
+            <!-- <h3><a href="shows.html"
                 onmouseover="swan.src='images/index/swan-icon-animated.gif';"
                 onmouseout="swan.src='images/index/swan-icon-100.webp';">
                 <img id="swan" src="images/index/swan-icon-100.webp"
                 alt="An icon of a swan flapping its wings taken from the Swan single artwork"
                 fetchpriority="high" />
-                SHOWS</a></h3>
+                SHOWS</a></h3> -->
         </div>
 
         <div class="index-link">
-            <h3><a href="press.html"
+            <h3>
+                <a href="press.html">
+                <img class="index-static" src="images/index/bells-icon-100.webp" fetchpriority="high"
+                alt="A ring of bells icon taken from The Bounded World disc art" />
+                <img class="index-active" src="images/index/bells-icon-animated.gif" fetchpriority="high"
+                alt="An animated spinning ring of bells icon taken from The Bounded World disc art" />
+                PRESS</a>
+            </h3>
+
+            <!-- <h3><a href="press.html"
                 onmouseover="bells.src='images/index/bells-icon-animated.gif';"
                 onmouseout="bells.src='images/index/bells-icon-100.webp';">
                 <img id="bells" src="images/index/bells-icon-100.webp"
                 alt="A spinning ring of bells icon taken from The Bounded World disc art"
                 fetchpriority="high" />
-                PRESS</a></h3>
+                PRESS</a></h3> -->
         </div>
     </div>
  </main>
 
-    <!-- bootstrap styling -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- bootstrap styling -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
