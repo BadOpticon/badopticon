@@ -213,6 +213,35 @@ function jump(h){
     }
 }
 
+/* Death Cult Blues */
+
+/* 01 */ function toggleDeath() {
+    var div = document.getElementById("lyricsDeath");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 02 */ function toggleFriction() {
+    var div = document.getElementById("lyricsFriction");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
+/* 03 */ function toggleLadrones() {
+    var div = document.getElementById("lyricsLadrones");
+    if (div.className === "lyrics-overlay") {
+        div.className = "lyrics-overlay active";
+    } else {
+        div.className = "lyrics-overlay";
+    }
+}
+
 /* The Visitor */
 
 /* 01 */ function toggleIndustry() {
