@@ -287,8 +287,12 @@ a:visited {
 }
 
 @media screen and (max-width: 991px) {
+  .nav-title {
+    display: inline;
+  }
+
   #tagline {
-    display: none;
+    margin: 5px 0 5px 2px;
   }
 
   .toggle-icon a,
