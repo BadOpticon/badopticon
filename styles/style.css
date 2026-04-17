@@ -191,7 +191,12 @@ a:visited {
 @media screen and (max-width: 991px) {
   main {
     padding: 0 0 4em 0;
-    background-size: 150%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background-size: 125%;
   }
 }
 
