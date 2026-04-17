@@ -1267,13 +1267,16 @@ footer {
 }
 
   .footer-nav ul {
-    font-size: 1.25rem;
     list-style-type: none;
   }
 
   .footer-nav li {
     display: inline-block;
     padding: 10px 10px 0 10px;
+  }
+
+  .footer-nav i {
+    font-size: 1.3rem;
   }
 
   .footer-nav img {
@@ -1297,8 +1300,14 @@ footer {
 
 /* FOOTER MEDIA QUERIES */
 
-  @media screen and (max-width: 991px) {
-    footer {
-      border: none;
-    }
+@media screen and (max-width: 991px) {
+  footer {
+    border: none;
   }
+}
+
+@media screen and (max-width: 575px) {
+  .site-links {
+    font-size: 0.9rem;
+  }
+}
