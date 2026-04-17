@@ -17,8 +17,11 @@
     --greytransparent: rgba(106, 106, 106, 0.4);
     --darkgrey: rgba(34, 34, 34, 1);
     --dgtransparent: rgba(34, 34, 34, 0.8);
-    --blacktransgradient: linear-gradient(275deg, rgba(0, 0, 0, 0) 0%,
-                                        rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
+    --blacktransgradient: radial-gradient(ellipse at 25% 0%,
+                                        rgba(0, 0, 0, 1) 0%,
+                                        rgba(0, 0, 0, 1) 25%,
+                                        rgba(0, 0, 0, 0.5) 40%,
+                                        rgba(0, 0, 0, 0) 70%);
 }
 
 /* FONTS */
@@ -192,6 +195,10 @@ a:visited {
   main {
     padding: 0 0 4em 0;
   }
+
+  h1 {
+    font-size: 52px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -317,10 +324,16 @@ a:visited {
         text-align: center;
       }
 
-    .nav-link a:hover,
-    .nav-link a:visited:hover {
-      color: var(--yellow);
+    .nav-link a,
+    .nav-link a:visited {
+      color: var(--white);
     }
+
+      .nav-link a:hover,
+      .nav-link a:active,
+      .nav-link a:visited:hover {
+        color: var(--red);
+      }
 
     .nav-link.responsive {
       position: relative;
@@ -443,6 +456,7 @@ a:visited {
 
 .no-bullets {
   list-style-type: none;
+  padding-left: 0;
 }
 
 /* LINK ANIMATION */
@@ -552,19 +566,14 @@ a:visited {
     margin-bottom: 0;
   }
 
-  .return a,
-  .return a:visited,
-  .link-animation a,
-  .link-animation a:visited {
+  .return.link-animation a,
+  .return.link-animation a:visited {
     color: var(--white);
   }
 
-    .return a:hover,
-    .return a:active,
-    .return a:visited:hover,
-    .link-animation a:hover,
-    .link-animation a:active,
-    .link-animation a:visited:hover {
+    .return.link-animation a:hover,
+    .return.link-animation a:active,
+    .return.link-animation a:visited:hover {
     color: var(--yellow)
     }
 }
@@ -890,6 +899,7 @@ main#index {
     position: relative;
     display: inline-block;
     margin: auto;
+    border: 1px solid var(--black);
   }
 
     .albums .music-navCont {
@@ -1006,12 +1016,22 @@ main#index {
 
 /* MUSIC MEDIA QUERIES */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 800px) {
   #MusicNavArrows {
     visibility: hidden;
     clear: both;
     display: none;
   }
+}
+
+@media screen and (max-width: 1325px) {
+        .music-nav.albums img {
+          max-width: 150px;
+        }
+
+        .music-nav.eps img {
+          max-width: 130px;
+        }
 }
 
 @media screen and (max-width: 991px) {
@@ -1031,6 +1051,7 @@ main#index {
   .music-nav {
     max-width: 100%;
     margin: 0;
+    background-color: transparent;
     border: none;
   }
 
@@ -1045,22 +1066,9 @@ main#index {
         padding-right: 0%;
       }
 
-        .music-nav.albums img {
-          max-width: 150px;
-        }
-
-        .music-nav.eps img {
-          max-width: 130px;
-        }
-
     .music-navCont {
       margin: 1em;
     }
-
-      .albums .music-navCont {
-        margin-left: auto;
-        margin-right: auto;
-      }
 
       .albums .music-navItem,
       .eps .music-navItem {
@@ -1071,20 +1079,6 @@ main#index {
     visibility: hidden;
     clear: both;
     display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .music .post-split-left {
-    order: 2;
-  }
-
-  .music .post-split-right {
-    order: 1;
-  }
-
-  .bc-wrap {
-    text-align: center;
   }
 }
 
@@ -1102,6 +1096,20 @@ main#index {
     #ep-list {
       justify-content: flex-start;
     }
+}
+
+@media screen and (max-width: 768px) {
+  .music .post-split-left {
+    order: 2;
+  }
+
+  .music .post-split-right {
+    order: 1;
+  }
+
+  .bc-wrap {
+    text-align: center;
+  }
 }
 
 /*====================================================\
@@ -1180,7 +1188,6 @@ main#index {
 .tour-dates {
   font-family: 'Courier Polski 1941';
   font-style: normal;
-  font-size: 1.1em;
 }
 
   .tour-dates i {
@@ -1190,9 +1197,21 @@ main#index {
 
 /* SHOWS MEDIA QUERIES */
 
+@media screen and (min-width: 992px) {
+  .tour-dates {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .shows {
     max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tour-dates {
+    font-size: clamp(0.75rem, 0.75rem + 0.417vw, 0.9rem);
   }
 }
 
