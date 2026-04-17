@@ -17,8 +17,8 @@
     --greytransparent: rgba(106, 106, 106, 0.4);
     --darkgrey: rgba(34, 34, 34, 1);
     --dgtransparent: rgba(34, 34, 34, 0.8);
-    --blacktransgradient: linear-gradient(275deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 50%,
-                                        rgba(0, 0, 0, 0.5) 75%, rgba(0, 0, 0, 0.75) 100%);
+    --blacktransgradient: linear-gradient(275deg, rgba(0, 0, 0, 0) 0%,
+                                        rgba(0, 0, 0, 0.75) 75%, rgba(0, 0, 0, 1) 100%);
 }
 
 /* FONTS */
@@ -305,7 +305,7 @@ a:visited {
 
       .nav-link.responsive ul {
         max-height: 150px;
-        padding: 1rem 0 0 0;
+        padding: 1.5rem 0 0 0;
       }
 
       .nav-link li {
@@ -323,9 +323,21 @@ a:visited {
 
       .nav-title a.toggle-icon {
         display: block;
-        top: 17px;
-        right: 17px;
+        top: 25px;
+        right: 25px;
       }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-link ul {
+    font-size: clamp(16px, 20px + 0.7823vw, 22px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navigator h1 {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 358px) {
@@ -1006,18 +1018,6 @@ main#index {
     border-right: none !important;
   }
 
-    .music .post-split-left {
-      order: 2;
-    }
-
-    .music .post-split-right {
-      order: 1;
-    }
-
-  .bc-wrap {
-    text-align: center;
-  }
-
   .lyrics-overlay {
     width: 100%;
     transition: max-height ease-in-out 1000ms, width ease-in-out 0ms, padding ease-in-out 900ms, margin ease-in-out 900ms;
@@ -1069,7 +1069,21 @@ main#index {
   }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 768px) {
+  .music .post-split-left {
+    order: 2;
+  }
+
+  .music .post-split-right {
+    order: 1;
+  }
+
+  .bc-wrap {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .albums .music-navItem,
   .eps .music-navItem {
     overflow-x: scroll;
