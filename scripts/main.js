@@ -1,3 +1,19 @@
+/* MOBILE NAVBAR TOGGLE */
+function navbar() {
+    var x = document.getElementById("nav-link");
+    if (x.className === "nav-link") {
+        x.className = "nav-link responsive";
+    } else {
+        x.className = "nav-link";
+    }
+}
+
+/* JUMP */
+function jump(h){
+    var top = document.getElementById(h).offsetTop;
+    window.scrollTo(0, top);
+}
+
 /* TAGLINES */
 const tags = ["Post-structuralist solutions for a bounded world",
             "Bringing about the Aeon of Horus since 2018",
@@ -12,6 +28,7 @@ const tags = ["Post-structuralist solutions for a bounded world",
             "A.K.A. Wet Leg",
             "A.K.A. The Strokes",
             "A.K.A. F.K.A. Twigs",
+            "A.K.A. Bhad Bhabie",
             "Blood makes the green grass grow",
             "The most hated band in Seattle",
             "Random violence or vox populi??",
@@ -36,19 +53,3 @@ const tags = ["Post-structuralist solutions for a bounded world",
   const randomTag = Math.floor(Math.random() * tags.length);
   document.getElementById('tagline').innerHTML = tags[randomTag];
 }();
-
-/* MOBILE NAVBAR TOGGLE */
-function navbar() {
-    var x = document.getElementById("nav-link");
-    if (x.className === "nav-link") {
-        x.className = "nav-link responsive";
-    } else {
-        x.className = "nav-link";
-    }
-}
-
-/* JUMP */
-function jump(h){
-    var top = document.getElementById(h).offsetTop;
-    window.scrollTo(0, top);
-}
