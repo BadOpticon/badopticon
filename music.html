@@ -37,35 +37,35 @@
 </head>
 
 <body>
+
+<nav class="container-fluid navigator">
+    <div class="row d-flex align-items-center" id="Top">
+        <div class="col-lg-6 nav-title">
+                    <h1><a href="index.html">Bad Optics</a></h1>
+                    <h4 id="tagline"></h4>
+                    <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
+                        <i class="bi bi-list"></i>
+                    </a>
+        </div>
+
+        <div class="col-lg-6 nav-link" id="nav-link">
+            <ul>
+                <li class="link-animation"><a href="home.html">Home</a></li>
+                <li class="link-animation"><a href="music.html">Music</a></li>
+                <li class="link-animation"><a href="videos.html">Videos</a></li>
+                <li class="link-animation"><a href="shows.html">Shows</a></li>
+                <li class="link-animation"><a href="press.html">Press</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <header class="container-fluid header">
+        <h1>Music</h1>
+    </header>
+
     <nav>
-        <div class="container-fluid navigator">
-            <div class="row d-flex align-items-center" id="Top">
-                <div class="col-lg-6 nav-title">
-                            <h1><a href="index.html">Bad Optics</a></h1>
-                            <h4 id="tagline"></h4>
-                            <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
-                                <i class="bi bi-list"></i>
-                            </a>
-                </div>
-
-                <div class="col-lg-6 nav-link" id="nav-link">
-                    <ul>
-                        <li class="link-animation"><a href="home.html">Home</a></li>
-                        <li class="link-animation"><a href="music.html">Music</a></li>
-                        <li class="link-animation"><a href="videos.html">Videos</a></li>
-                        <li class="link-animation"><a href="shows.html">Shows</a></li>
-                        <li class="link-animation"><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <div class="container-fluid header">
-            <h1>Music</h1>
-        </div>
-
         <div class="music-nav albums">
             <div class="music-navHead">
                 <div class="music-navItem">
@@ -163,13 +163,15 @@
                 <p><i class="bi bi-arrow-left-right"></i> <em>SCROLL</em></p>
             </div>
         </div>
+    </nav>
 
-        <div class="container post-title">
+    <section id="FullLengths">
+        <header class="container post-title">
             <h2>Full Lengths</h2>
-        </div>
+        </header>
 
         <div class="container-fluid music">
-            <div class="row post left" id="TBW">
+            <article class="row post left" id="TBW">
                 <h3 class="post-name">The Bounded World (2025)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -380,7 +382,7 @@
                                         The rats!<br />
                                         Folding inward!</p>
                                     </div>
-    
+
                                     <div class="col-md-5">
                                         <p><em>(rats rats rats rats rats rats)<br />
                                         (rats rats rats rats rats rats)<br />
@@ -403,7 +405,7 @@
                                         The cats!<br />
                                         Nameless victims!</p>
                                     </div>
-    
+
                                     <div class="col-md-5">
                                         <p><em>(rats rats rats rats rats rats)<br />
                                         (rats rats rats rats rats rats)<br />
@@ -808,9 +810,9 @@
                         <li><a href="javascript:;" id="swanSingleArt">Swan Single Art</a></li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <div class="row post right bottom" id="PA">
+            <article class="row post right bottom" id="PA">
                 <h3 class="post-name">Pax Americana (2022)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -1312,15 +1314,17 @@
                         <li><a href="javascript:;" id="paxArtBack">Back Cover</a></li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </div>
+    </section>
 
-        <div class="container-fluid post-title">
+    <section id="EPs-Singles">
+        <header class="container-fluid post-title">
             <h2>EPs & Singles</h2>
-        </div>
+        </header>
 
         <div class="container-fluid music">
-            <div class="row left post" id="DCB">
+            <article class="row left post" id="DCB">
                 <h3 class="post-name">Death Cult Blues (2026)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -1555,9 +1559,9 @@
                         <li>Digital only - 'tis no other art, English!</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <div class="row right post" id="TV">
+            <article class="row right post" id="TV">
                 <h3 class="post-name">The Visitor (2023)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -1748,9 +1752,9 @@
                         <li><a href="javascript:;" id="tvArtBack">Back Cover</a></li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <div class="row left post" id="BFP">
+            <article class="row left post" id="BFP">
                 <h3 class="post-name">Beach Front Property / Dungeon Crawler (2021)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -1891,9 +1895,9 @@
                         <li>Digital only - there ain't no other art!</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <div class="row right post" id="FS">
+            <article class="row right post" id="FS">
                 <h3 class="post-name">Feng Shui for the Wolf Society (2018)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -1982,9 +1986,9 @@
                         <li>Digital only - just picture in your mind's eye what the other art might have been</li>
                     </ul>
                 </div>
-            </div>
+            </article>
 
-            <div class="row left post bottom" id="WSoP">
+            <article class="row left post bottom" id="WSoP">
                 <h3 class="post-name">Warm Strokes of Pragmatism (2018)</h3>
 
                 <div class="col-lg-8 col-md-7 post-split-left">
@@ -2011,7 +2015,7 @@
                                     and command them to destroy<br />
                                     all the lesser bands<br />
                                     and lay waste to the land</p>
-    
+
                                 <p>I don't even like music!<br />
                                     I need it like a knife in the back<br />
                                     Drag it to the depths of the pit<br />
@@ -2128,40 +2132,41 @@
                         <li><a href="javascript:;" id="wsopArtBack">Back Cover</a></li>
                     </ul>
                 </div>
-            </div>
+            </article>
         </div>
-    </main>
+    </section>
+</main>
 
-    <footer>
-        <div class="row footer-nav social-links">
-            <ul class="mb-1">
-                <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
-                <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/badopticsband" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.youtube.com/@badoptics2397" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.patreon.com/badoptics" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
-            </ul>
-        </div>
+<footer>
+    <div class="row footer-nav social-links">
+        <ul class="mb-1">
+            <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
+            <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/badopticsband" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/@badoptics2397" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.patreon.com/badoptics" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+        </ul>
+    </div>
 
-        <div class="row footer-nav site-links">
-            <ul class="courier-polski">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="shows.html">Shows</a></li>
-                <li><a href="press.html">Press</a></li>
-            </ul>
-        </div>
+    <div class="row footer-nav site-links">
+        <ul class="courier-polski">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="press.html">Press</a></li>
+        </ul>
+    </div>
 
-        <p class="font-small">&copy; 2026 Bad Optics, LLC<br />
-        This website was designed & built with love by Christian J. Hidell</p>
-    </footer>
+    <p class="font-small">&copy; 2026 Bad Optics, LLC<br />
+    This website was designed & built with love by Christian J. Hidell</p>
+</footer>
 
-    <!-- scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/music.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
+<!-- scripts -->
+<script src="scripts/main.js"></script>
+<script src="scripts/music.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>

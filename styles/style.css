@@ -1173,6 +1173,12 @@ main#index {
   background-color: var(--redbrown) !important;
 }
 
+    .bit-widget .bit-play-my-city-button {
+      background-color:var(--redbrown) !important;
+      border: 1px solid var(--black) !important;
+      color: var(--white);
+    }
+
 .tour-poster {
   max-width: 400px;
   width: 100%;
@@ -1183,6 +1189,17 @@ main#index {
   font-family: 'Courier Polski 1941';
   font-style: normal;
 }
+
+  .tour-dates a,
+  .tour-dates a:visited {
+    color: var(--yellow);
+  }
+
+    .tour-dates a:hover,
+    .tour-dates a:active,
+    .tour-dates a:visited:hover {
+      color: var(--darkyellow);
+    }
 
   .tour-dates i {
     font-size: 0.75rem;

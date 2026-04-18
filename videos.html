@@ -37,41 +37,36 @@
 </head>
 
 <body>
-    <nav>
-        <div class="container-fluid navigator">
-            <div class="row d-flex align-items-center" id="Top">
-                <div class="col-lg-6 nav-title">
-                            <h1><a href="index.html">Bad Optics</a></h1>
-                            <h4 id="tagline"></h4>
-                            <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
-                                <i class="bi bi-list"></i>
-                            </a>
-                </div>
-
-                <div class="col-lg-6 nav-link" id="nav-link">
-                    <ul>
-                        <li class="link-animation"><a href="home.html">Home</a></li>
-                        <li class="link-animation"><a href="music.html">Music</a></li>
-                        <li class="link-animation"><a href="videos.html">Videos</a></li>
-                        <li class="link-animation"><a href="shows.html">Shows</a></li>
-                        <li class="link-animation"><a href="press.html">Press</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <div class="container-fluid header">
-            <h1>Videos</h1>
+<nav class="container-fluid navigator">
+    <div class="row d-flex align-items-center" id="Top">
+        <div class="col-lg-6 nav-title">
+                    <h1><a href="index.html">Bad Optics</a></h1>
+                    <h4 id="tagline"></h4>
+                    <a href="javascript:void(0);" class="toggle-icon" onclick="navbar()">
+                        <i class="bi bi-list"></i>
+                    </a>
         </div>
 
-        <div class="container post-title">
-                <h2>Music Videos</h2>
+        <div class="col-lg-6 nav-link" id="nav-link">
+            <ul>
+                <li class="link-animation"><a href="home.html">Home</a></li>
+                <li class="link-animation"><a href="music.html">Music</a></li>
+                <li class="link-animation"><a href="videos.html">Videos</a></li>
+                <li class="link-animation"><a href="shows.html">Shows</a></li>
+                <li class="link-animation"><a href="press.html">Press</a></li>
+            </ul>
         </div>
+    </div>
+</nav>
+
+<main>
+    <section id="MusicVideos">
+        <header class="container post-title">
+                <h1>Music Videos</h1>
+        </header>
 
         <div class="container videos">
-            <div id="FallingVideo" class="row post">
+            <article id="FallingVideo" class="row post">
                 <div class="col-lg-8 post-split-left">
                     <div class="youtube">
                         <iframe width="560"
@@ -94,9 +89,9 @@
 
                     <p>Shot at a white space in Capitol Hill and at Alex's house in February 2025</p>
                 </div>
-            </div>
+            </article>
 
-            <div id="TurnscrewsVideo" class="row post bottom">
+            <article id="TurnscrewsVideo" class="row post bottom">
                 <div class="col-lg-8 post-split-left">
                     <div class="youtube">
                         <iframe width="560"
@@ -120,15 +115,17 @@
                     <p>Shot in an old warehouse in Tacoma in October 2020<br />
                     Additional shots done in the practice space in November 2020</p>
                 </div>
-            </div>
+            </article>
         </div>
+    </section>
 
-        <div class="container-fluid post-title">
-            <h2>Live Stuff</h2>
-        </div>
+    <section id="LiveVideos">
+        <header class="container-fluid post-title">
+            <h1>Live Stuff</h1>
+        </header>
 
         <div class="container videos">
-            <div id="ArtLiveVideo" class="row post">
+            <article id="ArtLiveVideo" class="row post">
                 <div class="col-lg-8 post-split-left">
                     <div class="youtube">
                         <iframe width="560"
@@ -147,9 +144,9 @@
                     <h5>The Facts</h5>
                     <p>Shot by Jimmy Humphryes</p>
                 </div>
-            </div>
+            </article>
 
-            <div id="BiSLiveVideo" class="row post bottom">
+            <article id="BiSLiveVideo" class="row post bottom">
                 <div class="col-lg-8 post-split-left">
                     <div class="youtube">
                         <iframe width="560"
@@ -168,39 +165,40 @@
                     <p>Originally aired on February 15th, 2019<br />
                     View the full playlist <a href="https://www.youtube.com/playlist?list=PLm0nC9ToS0UrndhvKSbGegIwjdjCRgD0L" target="_blank">HERE</a></p>
                 </div>
-            </div>
+            </article>
         </div>
-    </main>
+    </section>
+</main>
 
-    <footer>
-        <div class="row footer-nav social-links">
-            <ul class="mb-1">
-                <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
-                <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/badopticsband" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.youtube.com/@badoptics2397" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.patreon.com/badoptics" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
-            </ul>
-        </div>
+<footer>
+    <div class="row footer-nav social-links">
+        <ul class="mb-1">
+            <li><a href="https://badoptics.bandcamp.com" target="_blank"><i class="fa fa-bandcamp"></i></a></li>
+            <li><a href="https://www.instagram.com/bad.optics" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/badopticsband" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/@badoptics2397" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.patreon.com/badoptics" target="_blank"><i class="fa-brands fa-patreon"></i></a></li>
+        </ul>
+    </div>
 
-        <div class="row footer-nav site-links">
-            <ul class="courier-polski">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="videos.html">Videos</a></li>
-                <li><a href="shows.html">Shows</a></li>
-                <li><a href="press.html">Press</a></li>
-            </ul>
-        </div>
+    <div class="row footer-nav site-links">
+        <ul class="courier-polski">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="shows.html">Shows</a></li>
+            <li><a href="press.html">Press</a></li>
+        </ul>
+    </div>
 
-        <p class="font-small">&copy; 2026 Bad Optics, LLC<br />
-        This website was designed & built with love by Christian J. Hidell</p>
-    </footer>
+    <p class="font-small">&copy; 2026 Bad Optics, LLC<br />
+    This website was designed & built with love by Christian J. Hidell</p>
+</footer>
 
-    <!-- scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
+<!-- scripts -->
+<script src="scripts/main.js"></script>
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/565798c053.js" crossorigin="anonymous"></script>
 
-    </body>
+</body>
 </html>
