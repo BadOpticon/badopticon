@@ -1230,11 +1230,6 @@ main#index {
   border-bottom: 1px solid var(--black);
 }
 
-.blog.left,
-.blog.right {
-  width: 90%;
-}
-
 .blog .return {
   margin-top: 0;
 }
@@ -1246,6 +1241,7 @@ main#index {
   background-size: 4%;
   background-position: 99% 50%;
   background-repeat: no-repeat;
+  margin-bottom: 0.5rem;
   padding: 1rem;
 }
 
@@ -1278,6 +1274,13 @@ main#index {
   .blog-nav li {
     display: inline-block;
   }
+
+@media screen and (min-width: 992px) {
+  .blog.left,
+  .blog.right {
+    width: 90%;
+  }
+}
 
 /*====================================================\
 |                        EPK                          |
