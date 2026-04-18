@@ -671,7 +671,7 @@ main#index {
 
 /* INDEX MEDIA QUERIES */
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 767px) {
   main#index {
     padding-bottom: 0 !important;
   }
@@ -682,23 +682,6 @@ main#index {
     max-width: 100%;
   }
 }
-
-/* @media screen and (max-width: 575px) {
-    .index-link h2 {
-      font-size: clamp(20px, 3.5vw, 32px);
-    }
-
-    .index-link img {
-      width: 75px;
-    }
-}
-
- @media screen and (max-width: 424px) {
-  .index-link {
-    width: 100vw;
-    justify-content: center;
-  }
-} */
 
 /*====================================================\
 |                         HOME                        |
