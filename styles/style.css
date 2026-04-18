@@ -460,6 +460,11 @@ a:visited {
   padding-left: 0;
 }
 
+.personnel {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* LINK ANIMATION */
 
 .link-animation {
@@ -693,7 +698,6 @@ main#index {
 
   .home-bio p {
     font-size: 1em;
-    font-weight: 600;
   }
 
   .home-bio > div {
@@ -783,12 +787,6 @@ main#index {
 
 .writing-credits {
   padding-top: 10px;
-}
-
-.personnel {
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
 }
 
 .album-art {
@@ -1241,10 +1239,18 @@ main#index {
   margin-top: 0;
 }
 
-.blog-post-title,
-.blog-post-subtitle,
-.blog-nav-header {
+.blog-post-header {
   font-family: 'Courier Polski 1941';
+  background-color: var(--black);
+  background-image: url("../images/dcb-cult-logo.png");
+  background-size: 4%;
+  background-position: 99% 50%;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+.bp-subtitle {
+  font-size: 1rem;
 }
 
 .blog-nav {
