@@ -128,6 +128,7 @@ h1, h2, h3, h4, h5, h6 {
       font-family: 'Courier Polski 1941';
       font-size: 64px;
       letter-spacing: 4px;
+      word-spacing: -15px;
       color: var(--white);
       text-shadow: 1px 4px 1px var(--red);
       margin-bottom: 0;
