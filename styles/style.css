@@ -162,7 +162,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   font-size: 16px;
-  font-weight: 500;
 }
 
 ul, ol {
@@ -411,9 +410,8 @@ a:visited {
   border: 2px solid var(--black);
 }
 
-  .post h2,
-  .post h3 {
-    padding-bottom: 10px;
+  .post h2 {
+    margin-bottom: 10px;
   }
 
   .post img {
@@ -1225,6 +1223,55 @@ main#index {
     font-size: clamp(0.75rem, 0.75rem + 0.417vw, 0.9rem);
   }
 }
+
+/*====================================================\
+|                        BLOG                         |
+\*===================================================*/
+
+.blog-header {
+  border-bottom: 1px solid var(--black);
+}
+
+.blog.left,
+.blog.right {
+  width: 90%;
+}
+
+.blog .return {
+  margin-top: 0;
+}
+
+.blog-post-title,
+.blog-post-subtitle,
+.blog-nav-header {
+  font-family: 'Courier Polski 1941';
+}
+
+.blog-nav {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: var(--dgtransparent);
+  border: 1px solid var(--black);
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+  .blog-nav a,
+  .blog-nav a:visited {
+    color: var(--white);
+  }
+
+    .blog-nav a:hover,
+    .blog-nav a:active,
+    .blog-nav a:visited:hover {
+      color: var(--yellow);
+    }
+
+  .blog-nav li {
+    display: inline-block;
+  }
 
 /*====================================================\
 |                        EPK                          |
