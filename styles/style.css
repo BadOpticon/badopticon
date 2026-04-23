@@ -1103,6 +1103,32 @@ main#index {
 }
 
 /*====================================================\
+|                       MUSIC INFO PAGES              |
+\*===================================================*/
+
+.album-nav {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  align-items: center;
+  background-color: var(--dgtransparent);
+  border: 1px solid var(--black);
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+  .album-nav a,
+  .album-nav a:visited {
+    color: var(--white);
+  }
+
+    .album-nav a:hover,
+    .album-nav a:active,
+    .album-nav a:visited:hover {
+      color: var(--yellow);
+    }
+
+/*====================================================\
 |                       VIDEOS                        |
 \*===================================================*/
 
