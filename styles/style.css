@@ -704,48 +704,29 @@ main#index {
     align-items: center;
   }
 
-.news {
-  margin-bottom: 10px;
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-  .news h3,
-  .news h4,
-  .news h5 {
-    text-shadow: none;
-  }
-
-    .news h3 {
-      text-decoration: underline;
-    }
-
-  .news img {
-    border: 1px solid var(--black);
-    max-width: 400px;
-    width: 100%;
-    float: right;
-  }
-
-/* NEWS MEDIA QUERIES */
+/* HOME MEDIA QUERIES */
 @media screen and (max-width: 991px) {
-  .news {
-    max-width: 100%;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-    .news>.post-title,
-    .news>.post {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
   .home-bio {
     width: 100%;
   }
+
+  .home-bio .post-split-right {
+    text-align: center;
+  }
 }
+
+@media screen and (min-width: 992px) {
+  .home-bio .post-split-right {
+    text-align: end;
+  }
+
+    .home-bio .post-split-right img {
+      max-width: 350px;
+      width: 100%;
+    }
+}
+
+
 
 /*====================================================\
 |                       MUSIC                         |
